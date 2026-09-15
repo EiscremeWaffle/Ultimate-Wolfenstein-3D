@@ -1,1 +1,0 @@
-py convert_png_to_strings.py
