@@ -1,0 +1,36 @@
+actor Trans : WolfensteinMonster 23
+{
+	points 5000
+	health 850, 950, 1050, 1200
+	speed 1, 3
+	seesound "trans/sight"
+	deathsound "trans/death"
+	attacksound "trans/attack"
+	dropitem "GoldKey"
+	+AMBUSH
+	states
+	{
+		Spawn:
+			TRNS A -1 NOP A_Look(0, 0, 0, 0, 360)
+			stop
+		See:
+			TRNS A 5 NOP A_Chase
+			TRNS A 1.5
+			TRNS B 4 NOP A_Chase
+			TRNS C 5 NOP A_Chase
+			TRNS C 1.5
+			TRNS D 4 NOP A_Chase
+			loop
+		Missile:
+			TRNS E 15 A_FaceTarget
+			TRNS F 5 bright A_FaceTarget
+			TRNS GFGFGE 5 bright A_WolfAttack
+			goto See
+		Death:
+			TRNS A .5 A_Fall
+			TRNS A 52.5 A_Scream
+			TRNS HIJ 7.5
+			TRNS K -1
+			stop
+	}
+}

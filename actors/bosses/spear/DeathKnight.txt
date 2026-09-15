@@ -1,0 +1,42 @@
+actor DeathKnight : WolfensteinMonster 26
+{
+	points 5000
+	health 1250, 1350, 1450, 1600
+	speed 1, 4
+	missilefrequency 0.04
+	seesound "knight/sight"
+	deathsound "knight/death"
+	attacksound "knight/attack"
+	dropitem "GoldKey"
+	+AMBUSH
+	states
+	{
+		Spawn:
+			DKNT A -1 NOP A_Look(0, 0, 0, 0, 360)
+			stop
+		See:
+			DKNT A 5 NOP A_Chase("*", "*", CHF_BACKOFF)
+			DKNT A 1.5
+			DKNT B 4 NOP A_Chase("*", "*", CHF_BACKOFF)
+			DKNT C 5 NOP A_Chase("*", "*", CHF_BACKOFF)
+			DKNT C 1.5
+			DKNT D 4 NOP A_Chase("*", "*", CHF_BACKOFF)
+			loop
+		Missile:
+			DKNT E 15 A_FaceTarget
+			DKNT F 5 bright A_FaceTarget
+			DKNT H 0 bright A_WolfAttack
+			DKNT H 5 bright A_CustomMissile("HighRocket", 32, 0, 4)
+			DKNT G 5 bright A_WolfAttack
+			DKNT H 0 bright A_WolfAttack
+			DKNT H 5 bright A_CustomMissile("HighRocket", 32, 0, -4)
+			DKNT H 0 bright A_WolfAttack
+			goto See
+		Death:
+			DKNT A .5 A_Fall
+			DKNT A 52.5 A_Scream
+			DKNT IJKLMN 5
+			DKNT O -1
+			stop
+	}
+}

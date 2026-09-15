@@ -1,0 +1,35 @@
+actor ProfessorQuarkblitz : Wilhelm 100
+{
+	seesound "professor/sight"
+	deathsound "professor/death"
+	attacksound "professor/attack"
+	dropitem "YellowKey"
+	states
+	{
+		Spawn:
+			PROF A -1 NOP A_Look(0, 0, 0, 0, 360)
+			stop
+		See:
+			PROF A 5 NOP A_Chase("*", "*", CHF_BACKOFF)
+			PROF A 1.5
+			PROF B 4 NOP A_Chase("*", "*", CHF_BACKOFF)
+			PROF C 5 NOP A_Chase("*", "*", CHF_BACKOFF)
+			PROF C 1.5
+			PROF D 4 NOP A_Chase("*", "*", CHF_BACKOFF)
+			loop
+		Missile:
+			PROF E 15 A_FaceTarget
+			PROF F 5 bright A_FaceTarget
+			PROF G 0 bright A_FaceTarget
+			PROF G 5 bright A_CustomMissile("ChemicalRocket")
+			PROF HGH 5 bright A_WolfAttack
+			PROF H 0 bright A_WolfAttack
+			goto See
+		Death:
+			PROF A .5 A_Fall
+			PROF A 35 A_Scream
+			PROF IJK 5
+			PROF L -1
+			stop
+	}
+}

@@ -1,0 +1,36 @@
+actor Vase3 : Vase
+{
+	states
+	{
+		Spawn:
+			VAS3 A -1
+			stop
+	}
+}
+actor Vase4 : Vase
+{
+	states
+	{
+		Spawn:
+			VAS4 A -1
+			stop
+	}
+}
+actor Meat : Vines
+{
+	states
+	{
+		Spawn:
+			MEAT A -1
+			stop
+	}
+}
+actor ProtoPillar : WhitePillar
+{
+	states
+	{
+		Spawn:
+			COL5 A -1
+			stop
+	}
+}

@@ -1,0 +1,38 @@
+//Credit to AstroCreep
+actor MutantRat : Dog 
+{
+	points 200
+	health 1
+	speed 2.93, 6
+	sighttime 1, 8
+	attacksound "rat/attack"
+	deathsound "rat/death"
+	secretdeathsound "dog/fart"
+	seesound "rat/attack"
+	-CANUSEWALLS
+	states
+	{
+				Spawn:
+			MRAT D -1 NOP A_Look(0,0,0,0,360)
+			stop
+		Pain:
+		Path:
+		See:
+			MRAT A 4 NOP A_Chase
+			MRAT B 4 NOP A_Chase
+			MRAT C 4 NOP A_Chase
+			MRAT D 4 NOP A_Chase
+			loop
+		Melee:
+			MRAT EF 4 A_FaceTarget
+			MRAT G 10 A_MeleeAttack(random(1,15))
+			MRAT A 4
+			goto See
+		Death:
+			MRAT H 4 A_Fall
+			MRAT I 4 A_Scream
+			MRAT J 0 //A_BossDeath
+			MRAT J -1 A_PlaySound("misc/thud")
+			stop
+	}
+}

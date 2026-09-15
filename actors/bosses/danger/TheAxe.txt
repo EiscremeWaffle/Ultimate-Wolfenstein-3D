@@ -1,0 +1,40 @@
+actor TheAxe : UberMutant 101
+{
+	deathsound "theaxe/death"
+	attacksound "theaxe/attack"
+	dropitem "YellowKey"
+	states
+	{
+		Spawn:
+			MAXE A -1 NOP A_Look(0, 0, 0, 0, 360)
+			stop
+		See:
+			MAXE A 5 NOP A_Chase
+			MAXE A 1.5
+			MAXE B 4 NOP A_Chase
+			MAXE C 5 NOP A_Chase
+			MAXE C 1.5
+			MAXE D 4 NOP A_Chase
+			loop
+		Missile:
+			MAXE E 15 A_FaceTarget
+			MAXE F 6 bright A_FaceTarget
+			MAXE G 0 bright A_MeleeAttack(10, 1.0)
+			MAXE G 6 bright A_WolfAttack
+			MAXE H 0 bright A_MeleeAttack(10, 1.0)
+			MAXE H 6 bright A_WolfAttack
+			MAXE G 0 bright A_MeleeAttack(10, 1.0)
+			MAXE G 6 bright A_WolfAttack
+			MAXE F 0 bright A_MeleeAttack(10, 1.0)
+			MAXE F 6 bright A_WolfAttack
+			MAXE E 0 A_MeleeAttack(10, 1.0)
+			MAXE E 6 A_WolfAttack
+			goto See
+		Death:
+			MAXE A .5 A_Fall
+			MAXE A 35 A_Scream
+			MAXE IJKL 7.5
+			MAXE M -1
+			stop
+	}
+}

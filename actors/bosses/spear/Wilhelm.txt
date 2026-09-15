@@ -1,0 +1,40 @@
+actor Wilhelm : WolfensteinMonster 25
+{
+	points 5000
+	health 950, 1050, 1150, 1300
+	speed 1, 4
+	missilefrequency 0.04
+	seesound "will/sight"
+	deathsound "will/death"
+	attacksound "will/attack"
+	dropitem "GoldKey"
+	+AMBUSH
+	states
+	{
+		Spawn:
+			WILL A -1 NOP A_Look(0, 0, 0, 0, 360)
+			stop
+		See:
+			WILL A 5 NOP A_Chase("*", "*", CHF_BACKOFF)
+			WILL A 1.5
+			WILL B 4 NOP A_Chase("*", "*", CHF_BACKOFF)
+			WILL C 5 NOP A_Chase("*", "*", CHF_BACKOFF)
+			WILL C 1.5
+			WILL D 4 NOP A_Chase("*", "*", CHF_BACKOFF)
+			loop
+		Missile:
+			WILL E 15 A_FaceTarget
+			WILL F 5 bright A_FaceTarget
+			WILL G 0 bright A_FaceTarget
+			WILL G 5 bright A_CustomMissile("Rocket")
+			WILL HGH 5 bright A_WolfAttack
+			WILL H 0 bright A_WolfAttack
+			goto See
+		Death:
+			WILL A .5 A_Fall
+			WILL A 35 A_Scream
+			WILL IJK 5
+			WILL L -1
+			stop
+	}
+}

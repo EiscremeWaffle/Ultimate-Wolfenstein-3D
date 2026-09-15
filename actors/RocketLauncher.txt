@@ -1,0 +1,67 @@
+actor MissileBox : Ammo 208
+{
+	inventory.amount 5
+	inventory.maxamount 99
+	ammo.backpackamount 5
+	ammo.backpackmaxamount 99
+	states
+	{
+		Spawn:
+			BROK A -1
+			stop
+	}
+}
+
+actor Missile
+{
+	radius 4
+	speed 12.8
+	damage (random(16,64))
+	seesound "missile/fire"
+	deathsound "missile/fire"
+	PROJECTILE
+	states
+	{
+		Spawn:
+			ROCK A -1 bright
+			stop
+		Death:
+			BOOM A 8 bright
+			BOOM B 8 bright
+			BOOM C 8 bright
+			stop
+	}
+}
+
+actor RocketLauncher : WolfWeapon 212
+{
+	inventory.pickupsound "weapon/launcher/pickup"
+	weapon.ammotype1 "MissileBox"
+	weapon.ammogive1 5
+	states
+	{
+		Spawn:
+			LAUN A -1
+			stop
+		Ready:
+			MISG A 1 A_WeaponReady
+			loop
+		Fire:
+			MISG B 3
+		Hold:
+			MISG C 3 bright A_FireCustomMissile("Missile")
+			MISG DB 3
+			goto Ready
+	}
+}
+
+actor Bandolier : BackpackItem 213
+{
+	inventory.pickupsound "misc/ammo_pkup"
+	states
+	{
+		Spawn:
+			BPAK A -1
+			stop
+	}
+}

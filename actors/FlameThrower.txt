@@ -1,0 +1,54 @@
+actor FlameThrower : WolfWeapon 211
+{
+	inventory.pickupsound "weapon/flame/pickup"
+	weapon.ammotype1 "GasTank"
+	weapon.ammogive1 99
+	states
+	{
+		Spawn:
+			FTHR A -1
+			stop
+		Ready:
+			FLMG A 1 A_WeaponReady
+			loop
+		Fire:
+			FLMG B 3
+		Hold:
+			FLMG C 3 bright A_FireCustomMissile("Flame")
+			FLMG D 3 bright A_FireCustomMissile("Flame")
+			FLMG B 3 A_ReFire
+			goto Ready
+	}
+}
+actor GasTank : Ammo 207
+{
+	inventory.amount 14
+	inventory.maxamount 99
+	ammo.backpackamount 2
+	ammo.backpackmaxamount 99
+	states
+	{
+		Spawn:
+			TANK A -1
+			stop
+	}
+}
+
+actor Flame
+{
+	radius 4
+	speed 12.8
+	damage (random(1,16))
+	seesound "flame/fire"
+	deathsound "flame/hit"
+	PROJECTILE
+	states
+	{
+		Spawn:
+			FLAM A -1 bright
+			stop
+		Death:
+			FLAM B 4 bright
+			stop
+	}
+}

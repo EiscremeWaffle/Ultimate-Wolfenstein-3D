@@ -1,0 +1,5 @@
+#include "actors/Player.txt"
+#include "actors/enemies/MutantRat.txt"
+#include "actors/FlameThrower.txt"
+#include "actors/deco.txt"
+#include "actors/RocketLauncher.txt"

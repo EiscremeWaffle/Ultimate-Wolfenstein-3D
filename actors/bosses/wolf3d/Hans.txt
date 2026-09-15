@@ -1,0 +1,36 @@
+actor Hans : WolfensteinMonster 16
+{
+	points 5000
+	health 850, 950, 1050, 1200
+	speed 1, 3
+	attacksound "hans/attack"
+	deathsound "hans/death"
+	seesound "hans/sight"
+	dropitem "GoldKey"
+	+AMBUSH
+	states
+	{
+		Spawn:
+			HANS A -1 NOP A_Look(0, 0, 0, 0, 360)
+			stop
+		See:
+			HANS A 5 NOP A_Chase
+			HANS A 1.5
+			HANS B 4 NOP A_Chase
+			HANS C 5 NOP A_Chase
+			HANS C 1.5
+			HANS D 4 NOP A_Chase
+			loop
+		Missile:
+			HANS E 15 A_FaceTarget
+			HANS F 5 A_FaceTarget
+			HANS GFGFGE 5 bright A_WolfAttack(0, "*", 0.667)
+			goto See
+		Death:
+			HANS H 7.5 A_Fall
+			HANS I 7.5 A_Scream
+			HANS J 7.5
+			HANS K -1
+			stop
+	}
+}

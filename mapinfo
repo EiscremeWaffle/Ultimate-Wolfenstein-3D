@@ -1,0 +1,3945 @@
+gameinfo
+{
+	playerclasses = "BJPlayerU"
+	drawreadthis = false
+	menumusic = "WONDERIN"
+	finalemusic = "CORNER"
+	victorymusic = "URAHERO"
+	finaleflat = "#DCDCDC"
+	intermissionmusic = "ENDLEVEL"
+	titletime = 15
+	menufontcolor_title = "Gold"
+	menufontcolor_label = "DarkGrey"
+	menufontcolor_selection = "Grey"
+	menufontcolor_invalid = "DarkGreen"
+	menufontcolor_invalidselection = "Green"
+	menufontcolor_highlight = "Yellow"
+	menufontcolor_highlightselection = "Gold"
+	highscoresfontcolor = "White"
+	pageindexfontcolor = "DarkYellow"
+	dialogcolor = "White"
+	borderflat = "#004040"
+	advisorycolor = "20 FF FC"
+	advisorypic = "PG13"
+	border = inset, "00 00 00", "00 70 70", "00 84 84"
+	messagecolors = "8C 8C 8C", "D0 D0 D0", "0 0 0"
+	messagefontcolor = "Black"
+	menuwindowcolors = "8C 8C 8C", "D0 D0 D0", "0 0 0", "FC F4 00", "B4 AC 00", "0 0 0"
+	psyched = "FF 00 00", "FF 9D 9D"
+	doorsoundsequence = "DoorNormal"
+	pushwallsoundsequence = "PushwallNormal"
+	gibfactor = 1
+	gamecolormap = "COLORMAP"
+	deathtransition = "Fizzle"
+	trackhighscores = true
+	signon = "WLFSGNON"
+	menufade = "AE 00 00"
+	menucolors = "88 00 00", "D4 00 00", "7D 00 00", "58 00 00", "64 00 00", "00 00 00"
+	titlemusic = "NAZI_NOR"
+	scoresmusic = "ROSTER"
+	drawreadthis = true
+	gamepalette = "WOLFPAL"
+	titlepage = "TITLEPIC"
+	menufontcolor_disabled = "DarkRed"
+	highscoresfont = "BigFont"
+	quitmessages = "$ENDSTR01", "$ENDSTR02", "$ENDSTR03", "$ENDSTR04", "$ENDSTR05", "$ENDSTR06", "$ENDSTR07", "$ENDSTR08", "$ENDSTR09",	 "$ENDSTR10", "$ENDSTR11", "$ENDSTR12", "$ENDSTR13", "$ENDSTR14", "$ENDSTR15", "$ENDSTR16", "$ENDSTR17", "$ENDSTR18"
+}
+automap
+{
+	fontcolor = "White"
+	background = "55 55 55"
+	doorcolor = "10 C7 10"
+	floorcolor = "55 55 55"
+	wallcolor = "00 8E 00"
+	yourcolor = "FF 80 00"
+}
+intermission SpearEnding
+{
+	Fader
+	{
+		Music = "XTHEEND"
+		Background = "#004545", 1
+		Draw = "BJCOLPS1", 124, 44
+		FadeType = FadeIn
+		Time = 15
+	}
+	Image
+	{
+		Draw = "BJCOLPS1", 124, 44
+		Time = -2
+	}
+	Image
+	{
+		Draw = "BJCOLPS2", 124, 44
+		Time = 52.5
+	}
+	Image
+	{
+		Draw = "BJCOLPS3", 124, 44
+		Time = 52.5
+	}
+	Image
+	{
+		Draw = "BJCOLPS4", 124, 44
+		Time = -3
+	}
+	Fader
+	{
+		Draw = "BJCOLPS4", 124, 44
+		FadeType = FadeOut
+		Time = 2.5
+	}
+	VictoryStats {}
+	Fader
+	{
+		Background = "ENDSCR1", 0//, "END7PAL"
+		FadeType = FadeIn
+		Time = 15
+	}
+	Image {}
+	Fader
+	{
+		FadeType = FadeOut
+		Time = 15
+	}
+
+	Fader
+	{
+		Background = "ENDSCR3", 0//, "END9PAL"
+		FadeType = FadeIn
+		Time = 15
+	}
+	TextScreen
+	{
+		Position = 160, 180
+		Text = "$STR_ENDGAME1", "$STR_ENDGAME2"
+		TextAlignment = Center
+		TextAnchor = Bottom
+		TextColor = "Cream"
+		TextSpeed = 0
+		TextDelay = 0
+		Time = 350
+	}
+	TextScreen
+	{
+		Position = 160, 180
+		Text = "$STR_ENDGAME3", "$STR_ENDGAME4"
+		TextAlignment = Center
+		TextAnchor = Bottom
+		TextColor = "Cream"
+		TextSpeed = 0
+		TextDelay = 0
+		Time = 350
+	}
+	Fader
+	{
+		FadeType = FadeOut
+		Time = 15
+	}
+
+	Fader
+	{
+		Background = "ENDSCR4", 0//, "END10PAL"
+		FadeType = FadeIn
+		Time = 15
+	}
+	Image {}
+	Fader
+	{
+		FadeType = FadeOut
+		Time = 15
+	}
+	Fader
+	{
+		Background = "ENDSCR5", 0//, "END11PAL"
+		FadeType = FadeIn
+		Time = 15
+	}
+	Image {}
+	Fader
+	{
+		FadeType = FadeOut
+		Time = 15
+	}
+	Fader
+	{
+		Background = "ENDSCR6", 0, "END12PAL"
+		FadeType = FadeIn
+		Time = 15
+	}
+	Image {}
+	Fader
+	{
+		FadeType = FadeOut
+		Time = 15
+	}
+	Fader
+	{
+		Background = "ENDSCR7", 0//, "END13PAL"
+		FadeType = FadeIn
+		Time = 15
+	}
+	Image {}
+	Fader
+	{
+		FadeType = FadeOut
+		Time = 15
+	}
+	Fader
+	{
+		Background = "ENDSCR8", 0//, "END14PAL"
+		FadeType = FadeIn
+		Time = 15
+	}
+	Image {}
+	Fader
+	{
+		FadeType = FadeOut
+		Time = 15
+	}
+	Fader
+	{
+		Background = "ENDSCR9", 0//, "END15PAL"
+		FadeType = FadeIn
+		Time = 15
+	}
+	Image {}
+	Fader
+	{
+		FadeType = FadeOut
+		Time = 15
+	}
+	Fader
+	{
+		Background = "ENDSCR2", 0//, "END8PAL"
+		FadeType = FadeIn
+		Time = 15
+	}
+	Image {}
+	Fader
+	{
+		FadeType = FadeOut
+		Time = 15
+	}
+	GotoTitle {}
+}
+
+adddefaultmap
+{
+	deathcam = true
+	translator = "xlat/O_Tst.txt"
+	victorynext = "EndTitle" //, "SpearEnding"
+}
+skill baby
+{
+	name = "$STR_DADDY"
+	picname = "M_BABY"
+	spawnfilter = 1
+	damagefactor = 0.25
+}
+
+skill easy
+{
+	name = "$STR_HURTME"
+	picname = "M_EASY"
+	spawnfilter = 2
+}
+
+skill normal
+{
+	name = "$STR_BRINGEM"
+	picname = "M_NORMAL"
+	spawnfilter = 3
+}
+
+skill hard
+{
+	name = "$STR_DEATH"
+	picname = "M_HARD"
+	spawnfilter = 4
+}
+skill nightmare
+{
+	name = "Mein Leben"
+	picname = "M_NIGH"
+	spawnfilter = 4
+	fastmonsters
+	damageFactor = 1.25
+	playerDamageFactor = 0.75
+}
+clearepisodes
+//EPISODES
+episode "edm1"
+{
+	lookup = "DEBUG\n JUST TESTING"
+	picname = "M_DEBG"
+	key = "Z"
+}
+	map "EDM1" lookup "HUSTR_11"
+	{
+		completionstring = "$COMP_11"
+		next = "EDM2"
+		secretnext = "E2M10"
+		defaultceiling = "#4A412A"
+		defaultfloor = "#FFFF00"
+		floornumber = 1
+		levelnum = 11
+		par = 150
+	//	completionstring = "yxkdgk,brjewebmbodtwis.irydoum p irdlkaeb"
+		levelbonus = 32767
+		music = "FUTURMIL"
+		cluster = 2
+	}
+
+	map "EDM2" lookup "HUSTR_12"
+	{
+		completionstring = "$COMP_12"
+		next = "EDM3"
+		secretnext = "E2M10"
+		defaultceiling = "#848400"
+		floornumber = 2
+		levelnum = 12
+		par = 240
+		music = "PREGNANT"
+		cluster = 2
+	}
+
+	map "EDM3" lookup "HUSTR_13"
+	{
+		completionstring = "$COMP_13"
+		next = "EDM1"
+		secretnext = "E2M10"
+		defaultceiling = "#543C1C" //"#555555"
+		floornumber = 3
+		levelnum = 13
+		par = 150
+		music = "GENEFUNK"
+		cluster = 2
+	}
+
+
+// Episode 1
+	episode "MAP01"
+	{
+		lookup = "WL_EPISODE1"
+		picname = "M_EPIS1"
+		key = "E"
+	}
+
+	cluster 1
+	{
+		exittext = "ENDART1"
+		exittextislump
+	}
+
+	map "MAP01"
+	{
+		next = "MAP02"
+		secretnext = "MAP10"
+		floornumber = 1
+		par = 90
+		music = "GETTHEM"
+		cluster = 1
+	}
+
+	map "MAP02"
+	{
+		next = "MAP03"
+		secretnext = "MAP10"
+		floornumber = 2
+		par = 120
+		music = "SEARCHN"
+		cluster = 1
+	}
+
+	map "MAP03"
+	{
+		next = "MAP04"
+		secretnext = "MAP10"
+		floornumber = 3
+		par = 120
+		music = "POW"
+		cluster = 1
+	}
+
+	map "MAP04"
+	{
+		next = "MAP05"
+		secretnext = "MAP10"
+		floornumber = 4
+		par = 210
+		music = "SUSPENSE"
+		cluster = 1
+	}
+
+	map "MAP05"
+	{
+		next = "MAP06"
+		secretnext = "MAP10"
+		floornumber = 5
+		par = 180
+		music = "GETTHEM"
+		cluster = 1
+	}
+
+	map "MAP06"
+	{
+		next = "MAP07"
+		secretnext = "MAP10"
+		floornumber = 6
+		par = 180
+		music = "SEARCHN"
+		cluster = 1
+	}
+
+	map "MAP07"
+	{
+		next = "MAP08"
+		secretnext = "MAP10"
+		floornumber = 7
+		par = 150
+		music = "POW"
+		cluster = 1
+	}
+
+	map "MAP08"
+	{
+		next = "MAP09"
+		secretnext = "MAP10"
+		floornumber = 8
+		par = 150
+		music = "SUSPENSE"
+		cluster = 1
+	}
+
+	map "MAP09"
+	{
+		next = "MAP10"
+		secretnext = "MAP10"
+		floornumber = 9
+		music = "WARMARCH"
+		highscoresgraphic = "M_WONEP1"
+		cluster = 1
+	}
+
+	map "MAP10"
+	{
+		next = "MAP02"
+		secretnext = "MAP10"
+		defaultceiling = "#400040"
+		floornumber = 10
+		music = "CORNER"
+		cluster = 1
+		completionstring = "$STR_SECRETCOMPLETED"
+		levelbonus = 15000
+		secretdeathsounds = true
+	}
+
+// Episode 2
+	episode "MAP11"
+	{
+		lookup = "WL_EPISODE2"
+		picname = "M_EPIS2"
+		key = "O"
+	}
+	cluster 2
+	{
+		exittext = "ENDART2"
+		exittextislump
+	}
+
+	map "MAP11"
+	{
+		next = "MAP12"
+		secretnext = "MAP20"
+		defaultceiling = "#585400"
+		floornumber = 1
+		par = 90
+		music = "NAZI_OMI"
+		cluster = 2
+	}
+
+	map "MAP12"
+	{
+		next = "MAP13"
+		secretnext = "MAP20"
+		defaultceiling = "#585400"
+		floornumber = 2
+		par = 210
+		music = "PREGNANT"
+		cluster = 2
+	}
+
+	map "MAP13"
+	{
+		next = "MAP14"
+		secretnext = "MAP20"
+		defaultceiling = "#585400"
+		floornumber = 3
+		par = 180
+		music = "GOINGAFT"
+		cluster = 2
+	}
+
+	map "MAP14"
+	{
+		next = "MAP15"
+		secretnext = "MAP20"
+		floornumber = 4
+		par = 120
+		music = "HEADACHE"
+		cluster = 2
+	}
+
+	map "MAP15"
+	{
+		next = "MAP16"
+		secretnext = "MAP20"
+		defaultceiling = "#4040FC"
+		floornumber = 5
+		par = 240
+		music = "NAZI_OMI"
+		cluster = 2
+	}
+
+	map "MAP16"
+	{
+		next = "MAP17"
+		secretnext = "MAP20"
+		defaultceiling = "#585400"
+		floornumber = 6
+		par = 360
+		music = "PREGNANT"
+		cluster = 2
+	}
+
+	map "MAP17"
+	{
+		next = "MAP18"
+		secretnext = "MAP20"
+		floornumber = 7
+		par = 60
+		music = "HEADACHE"
+		cluster = 2
+	}
+
+	map "MAP18"
+	{
+		next = "MAP19"
+		secretnext = "MAP20"
+		defaultceiling = "#580000"
+		floornumber = 8
+		par = 180
+		music = "GOINGAFT"
+		cluster = 2
+	}
+
+	map "MAP19"
+	{
+		next = "MAP20"
+		secretnext = "MAP20"
+		floornumber = 9
+		music = "WARMARCH"
+		highscoresgraphic = "M_WONEP2"
+		cluster = 2
+		specialaction = "Schabbs", "Exit_Victory"
+	}
+
+	map "MAP20"
+	{
+		next = "MAP12"
+		secretnext = "MAP20"
+		defaultceiling = "#4040FC"
+		floornumber = 10
+		music = "DUNGEON"
+		cluster = 2
+		completionstring = "$STR_SECRETCOMPLETED"
+		levelbonus = 15000
+	}
+
+// Episode 3
+
+	episode "MAP21"
+	{
+		lookup = "WL_EPISODE3"
+		picname = "M_EPIS3"
+		key = "D"
+	}
+
+	cluster 3
+	{
+		exittext = "ENDART3"
+		exittextislump
+	}
+
+	map "MAP21"
+	{
+		next = "MAP22"
+		secretnext = "MAP30"
+		floornumber = 1
+		par = 90
+		music = "INTROCW3"
+		cluster = 3
+	}
+
+	map "MAP22"
+	{
+		next = "MAP23"
+		secretnext = "MAP30"
+		floornumber = 2
+		par = 90
+		music = "NAZI_RAP"
+		cluster = 3
+	}
+
+	map "MAP23"
+	{
+		next = "MAP24"
+		secretnext = "MAP30"
+		floornumber = 3
+		par = 150
+		music = "TWELFTH"
+		cluster = 3
+	}
+
+	map "MAP24"
+	{
+		next = "MAP25"
+		secretnext = "MAP30"
+		floornumber = 4
+		par = 150
+		music = "ZEROHOUR"
+		cluster = 3
+	}
+
+	map "MAP25"
+	{
+		next = "MAP26"
+		secretnext = "MAP30"
+		floornumber = 5
+		par = 210
+		music = "INTROCW3"
+		cluster = 3
+	}
+
+	map "MAP26"
+	{
+		next = "MAP27"
+		secretnext = "MAP30"
+		defaultceiling = "#580000"
+		floornumber = 6
+		par = 150
+		music = "NAZI_RAP"
+		cluster = 3
+	}
+
+	map "MAP27"
+	{
+		next = "MAP28"
+		secretnext = "MAP30"
+		defaultceiling = "#483818"
+		floornumber = 7
+		par = 120
+		music = "TWELFTH"
+		cluster = 3
+	}
+
+	map "MAP28"
+	{
+		next = "MAP29"
+		secretnext = "MAP30"
+		floornumber = 8
+		par = 360
+		music = "ZEROHOUR"
+		cluster = 3
+	}
+
+	map "MAP29"
+	{
+		next = "MAP30"
+		secretnext = "MAP30"
+		floornumber = 9
+		music = "ULTIMATE"
+		highscoresgraphic = "M_WONEP3"
+		specialaction = "Hitler", "Exit_Victory"
+		cluster = 3
+	}
+
+	map "MAP30"
+	{
+		next = "MAP28"
+		secretnext = "MAP30"
+		defaultceiling = "#000098"
+		floornumber = 10
+		music = "PACMAN"
+		cluster = 3
+		completionstring = "$STR_SECRETCOMPLETED"
+		levelbonus = 15000
+	}
+
+// Episode 4
+
+	episode "MAP31"
+	{
+		lookup = "WL_EPISODE4"
+		picname = "M_EPIS4"
+		key = "A"
+	}
+
+	cluster 4
+	{
+		exittext = "ENDART4"
+		exittextislump
+	}
+
+	map "MAP31"
+	{
+		next = "MAP32"
+		secretnext = "MAP40"
+		floornumber = 1
+		par = 120
+		music = "GETTHEM"
+		cluster = 4
+	}
+
+	map "MAP32"
+	{
+		next = "MAP33"
+		secretnext = "MAP40"
+		defaultceiling = "#000058"
+		floornumber = 2
+		par = 120
+		music = "SEARCHN"
+		cluster = 4
+	}
+
+	map "MAP33"
+	{
+		next = "MAP34"
+		secretnext = "MAP40"
+		defaultceiling = "#580000"
+		floornumber = 3
+		par = 90
+		music = "POW"
+		cluster = 4
+	}
+
+	map "MAP34"
+	{
+		next = "MAP35"
+		secretnext = "MAP40"
+		defaultceiling = "#483818"
+		floornumber = 4
+		par = 60
+		music = "SUSPENSE"
+		cluster = 4
+	}
+
+	map "MAP35"
+	{
+		next = "MAP36"
+		secretnext = "MAP40"
+		defaultceiling = "#483818"
+		floornumber = 5
+		par = 270
+		music = "GETTHEM"
+		cluster = 4
+	}
+
+	map "MAP36"
+	{
+		next = "MAP37"
+		secretnext = "MAP40"
+		defaultceiling = "#000058"
+		floornumber = 6
+		par = 210
+		music = "SEARCHN"
+		cluster = 4
+	}
+
+	map "MAP37"
+	{
+		next = "MAP38"
+		secretnext = "MAP40"
+		defaultceiling = "#580000"
+		floornumber = 7
+		par = 120
+		music = "POW"
+		cluster = 4
+	}
+
+	map "MAP38"
+	{
+		next = "MAP39"
+		secretnext = "MAP40"
+		defaultceiling = "#716D00"
+		floornumber = 8
+		par = 270
+		music = "SUSPENSE"
+		cluster = 4
+	}
+
+	map "MAP39"
+	{
+		next = "MAP40"
+		secretnext = "MAP40"
+		floornumber = 9
+		music = "WARMARCH"
+		highscoresgraphic = "M_WONEP4"
+		specialaction = "Gift", "Exit_Victory"
+		cluster = 4
+	}
+
+	map "MAP40"
+	{
+		next = "MAP34"
+		secretnext = "MAP40"
+		defaultceiling = "#483818"
+		floornumber = 10
+		music = "CORNER"
+		cluster = 4
+		completionstring = "$STR_SECRETCOMPLETED"
+		levelbonus = 15000
+	}
+
+// Episode 5
+
+	episode "MAP41"
+	{
+		lookup = "WL_EPISODE5"
+		picname = "M_EPIS5"
+		key = "T"
+	}
+
+	cluster 5
+	{
+		exittext = "ENDART5"
+		exittextislump
+	}
+
+	map "MAP41"
+	{
+		next = "MAP42"
+		secretnext = "MAP50"
+		defaultceiling = "#007070"
+		floornumber = 1
+		par = 150
+		music = "NAZI_OMI"
+		cluster = 5
+	}
+
+	map "MAP42"
+	{
+		next = "MAP43"
+		secretnext = "MAP50"
+		floornumber = 2
+		par = 90
+		music = "PREGNANT"
+		cluster = 5
+	}
+
+	map "MAP43"
+	{
+		next = "MAP44"
+		secretnext = "MAP50"
+		defaultceiling = "#580000"
+		floornumber = 3
+		par = 150
+		music = "GOINGAFT"
+		cluster = 5
+	}
+
+	map "MAP44"
+	{
+		next = "MAP45"
+		secretnext = "MAP50"
+		defaultceiling = "#580000"
+		floornumber = 4
+		par = 150
+		music = "HEADACHE"
+		cluster = 5
+	}
+
+	map "MAP45"
+	{
+		next = "MAP46"
+		secretnext = "MAP50"
+		defaultceiling = "#483818"
+		floornumber = 5
+		par = 240
+		music = "NAZI_OMI"
+		cluster = 5
+	}
+
+	map "MAP46"
+	{
+		next = "MAP47"
+		secretnext = "MAP50"
+		defaultceiling = "#80502C"
+		floornumber = 6
+		par = 180
+		music = "PREGNANT"
+		cluster = 5
+	}
+
+	map "MAP47"
+	{
+		next = "MAP48"
+		secretnext = "MAP50"
+		floornumber = 7
+		par = 270
+		music = "HEADACHE"
+		cluster = 5
+	}
+
+	map "MAP48"
+	{
+		next = "MAP49"
+		secretnext = "MAP50"
+		floornumber = 8
+		par = 210
+		music = "GOINGAFT"
+		cluster = 5
+	}
+
+	map "MAP49"
+	{
+		next = "MAP50"
+		secretnext = "MAP50"
+		floornumber = 9
+		music = "WARMARCH"
+		highscoresgraphic = "M_WONEP5"
+		cluster = 5
+	}
+
+	map "MAP50"
+	{
+		next = "MAP46"
+		secretnext = "MAP50"
+		defaultceiling = "#580000"
+		floornumber = 10
+		music = "DUNGEON"
+		cluster = 5
+		completionstring = "$STR_SECRETCOMPLETED"
+		levelbonus = 15000
+	}
+
+// Episode 6
+
+	episode "MAP51"
+	{
+		lookup = "WL_EPISODE6"
+		picname = "M_EPIS6"
+		key = "C"
+	}
+
+	cluster 6
+	{
+		exittext = "ENDART6"
+		exittextislump
+	}
+
+	map "MAP51"
+	{
+		next = "MAP52"
+		secretnext = "MAP60"
+		floornumber = 1
+		par = 390
+		music = "INTROCW3"
+		cluster = 6
+	}
+
+	map "MAP52"
+	{
+		next = "MAP53"
+		secretnext = "MAP60"
+		floornumber = 2
+		par = 240
+		music = "NAZI_RAP"
+		cluster = 6
+	}
+
+	map "MAP53"
+	{
+		next = "MAP54"
+		secretnext = "MAP60"
+		floornumber = 3
+		par = 270
+		music = "TWELFTH"
+		cluster = 6
+	}
+
+	map "MAP54"
+	{
+		next = "MAP55"
+		secretnext = "MAP60"
+		floornumber = 4
+		par = 360
+		music = "ZEROHOUR"
+		cluster = 6
+	}
+
+	map "MAP55"
+	{
+		next = "MAP56"
+		secretnext = "MAP60"
+		defaultceiling = "#483818"
+		floornumber = 5
+		par = 300
+		music = "INTROCW3"
+		cluster = 6
+	}
+
+	map "MAP56"
+	{
+		next = "MAP57"
+		secretnext = "MAP60"
+		defaultceiling = "#483818"
+		floornumber = 6
+		par = 330
+		music = "NAZI_RAP"
+		cluster = 6
+	}
+
+	map "MAP57"
+	{
+		next = "MAP58"
+		secretnext = "MAP60"
+		defaultceiling = "#007070"
+		floornumber = 7
+		par = 330
+		music = "TWELFTH"
+		cluster = 6
+	}
+
+	map "MAP58"
+	{
+		next = "MAP59"
+		secretnext = "MAP60"
+		defaultceiling = "#483818"
+		floornumber = 8
+		par = 510
+		music = "ZEROHOUR"
+		cluster = 6
+	}
+
+	map "MAP59"
+	{
+		next = "MAP60"
+		secretnext = "MAP60"
+		defaultceiling = "#483818"
+		floornumber = 9
+		music = "ULTIMATE"
+		highscoresgraphic = "M_WONEP6"
+		cluster = 6
+		specialaction = "FatFace", "Exit_Victory"
+	}
+
+	map "MAP60"
+	{
+		next = "MAP54"
+		secretnext = "MAP60"
+		defaultceiling = "#483818"
+		floornumber = 10
+		music = "FUNKYOU"
+		cluster = 6
+		completionstring = "$STR_SECRETCOMPLETED"
+		levelbonus = 15000
+	}
+episode "SMAP01"
+{
+//	lookup = "Episode 7: \nSpear of Destiny"
+	lookup = "SOD_EPISODE1"
+	picname = "M_EPIS7"
+	key = "G"
+}
+	// Demo cluster
+	cluster 7
+	{
+	exittext = "ENDART7"
+	exittextislump
+	}
+
+	// Registered cluster
+	cluster 8
+	{
+	}
+	map "SMAP01" lookup "SHUSTR_01"
+	{
+		next = "SMAP02"
+		secretnext = "SMAP02"
+		defaultceiling = "#044000"
+		par = 90
+		music = "XTIPTOE"
+		floornumber = 1
+		cluster = 7
+	}
+
+	map "SMAP02" lookup "SHUSTR_02"
+	{
+		next = "SMAP03"
+		secretnext = "SMAP03"
+		defaultceiling = "#404000"
+		par = 210
+		music = "XFUNKIE"
+		floornumber = 2
+		cluster = 7
+	}
+
+	map "SMAP03" lookup "SHUSTR_03"
+	{
+		next = "SMAP04"
+		secretnext = "SMAP04"
+		par = 225
+		music = "XDEATH"
+		floornumber = 3
+		cluster = 8
+	}
+
+	map "SMAP04" lookup "SHUSTR_04"
+	{
+		next = "SMAP05"
+		secretnext = "SMAP19"
+		defaultceiling = "#382C14"
+		par = 210
+		music = "XGETYOU"
+		floornumber = 4
+		cluster = 8
+	}
+
+	map "SMAP05" lookup "SHUSTR_05"
+	{
+		next = "SMAP06"
+		secretnext = "SMAP06"
+		defaultceiling = "#28200C"
+		music = "ULTIMATE"
+		floornumber = 5
+		cluster = 8
+		completionstring = "$STR_TRANSDEFEATED"
+		levelbonus = 15000
+	}
+
+	map "SMAP06" lookup "SHUSTR_06"
+	{
+		next = "SMAP07"
+		secretnext = "SMAP07"
+		defaultceiling = "#4C0000"
+		par = 270
+		music = "DUNGEON"
+		floornumber = 6
+		cluster = 8
+	}
+
+	map "SMAP07" lookup "SHUSTR_07"
+	{
+		next = "SMAP08"
+		secretnext = "SMAP08"
+		defaultceiling = "#004040"
+		par = 195
+		music = "GOINGAFT"
+		floornumber = 7
+		cluster = 8
+	}
+
+	map "SMAP08" lookup "SHUSTR_08"
+	{
+		next = "SMAP09"
+		secretnext = "SMAP09"
+		defaultceiling = "#00004C"
+		par = 165
+		music = "POW"
+		floornumber = 8
+		cluster = 8
+	}
+
+	map "SMAP09" lookup "SHUSTR_09"
+	{
+		next = "SMAP10"
+		secretnext = "SMAP10"
+		defaultceiling = "#340058"
+		par = 285
+		music = "TWELFTH"
+		floornumber = 9
+		cluster = 8
+	}
+
+	map "SMAP10" lookup "SHUSTR_10"
+	{
+		next = "SMAP11"
+		secretnext = "SMAP11"
+		defaultceiling = "#004040"
+		music = "ULTIMATE"
+		floornumber = 10
+		cluster = 8
+		completionstring = "$STR_WILHELMDEFEATED"
+		levelbonus = 15000
+	}
+
+	map "SMAP11" lookup "SHUSTR_11"
+	{
+		next = "SMAP12"
+		secretnext = "SMAP12"
+		par = 390
+		music = "NAZI_OMI"
+		floornumber = 11
+		cluster = 8
+	}
+
+	map "SMAP12" lookup "SHUSTR_12"
+	{
+		next = "SMAP13"
+		secretnext = "SMAP20"
+		defaultceiling = "#382C14"
+		par = 270
+		music = "GETTHEM"
+		floornumber = 12
+		cluster = 8
+	}
+
+	map "SMAP13" lookup "SHUSTR_13"
+	{
+		next = "SMAP14"
+		secretnext = "SMAP14"
+		defaultceiling = "#28200C"
+		par = 165
+		music = "SUSPENSE"
+		floornumber = 13
+		cluster = 8
+	}
+
+	map "SMAP14" lookup "SHUSTR_14"
+	{
+		next = "SMAP15"
+		secretnext = "SMAP15"
+		defaultceiling = "#382C14"
+		par = 270
+		music = "SEARCHN"
+		floornumber = 14
+		cluster = 8
+	}
+
+	map "SMAP15" lookup "SHUSTR_15"
+	{
+		next = "SMAP16"
+		secretnext = "SMAP16"
+		defaultceiling = "#28200C"
+		par = 360
+		music = "ZEROHOUR"
+		floornumber = 15
+		cluster = 8
+	}
+
+	map "SMAP16" lookup "SHUSTR_16"
+	{
+		next = "SMAP17"
+		secretnext = "SMAP17"
+		defaultceiling = "#382C14"
+		music = "ULTIMATE"
+		floornumber = 16
+		cluster = 8
+		completionstring = "$STR_UBERDEFEATED"
+		levelbonus = 15000
+	}
+
+	map "SMAP17" lookup "SHUSTR_17"
+	{
+		next = "SMAP18"
+		secretnext = "SMAP18"
+		defaultceiling = "#006464"
+		par = 360
+		music = "XPUTIT"
+		floornumber = 17
+		cluster = 8
+	}
+
+	map "SMAP18" lookup "SHUSTR_18"
+	{
+		next = "SMAP21"
+		secretnext = "SMAP21"
+		defaultceiling = "#483818"
+		music = "ULTIMATE"
+		floornumber = 18
+		cluster = 8
+		nointermission
+	}
+
+	map "SMAP19" lookup "SHUSTR_19"
+	{
+		next = "SMAP05"
+		secretnext = "SMAP05"
+		defaultceiling = "#4C0000"
+		music = "XJAZNAZI"
+		floornumber = 19
+		cluster = 8
+		completionstring = "$STR_SECRETTUNNELCOMPLETED"
+		levelbonus = 15000
+		secretdeathsounds = true
+	}
+
+	map "SMAP20" lookup "SHUSTR_20"
+	{
+		next = "SMAP13"
+		secretnext = "SMAP13"
+		music = "XFUNKIE"
+		floornumber = 20
+		cluster = 8
+		completionstring = "$STR_SECRETCASTLECOMPLETED"
+		levelbonus = 15000
+		secretdeathsounds = true
+	}
+
+	map "SMAP21" lookup "SHUSTR_21"
+	{
+    	victorynext = EndSequence, "SpearEnding"
+    	next = EndSequence, "SpearEnding"
+    	secretnext = EndSequence, "SpearEnding"
+		defaultceiling = "#483818"
+		music = "XEVIL"
+		floornumber = 18
+		cluster = 8	
+		ensureinventory = "GoldKey"
+		highscoresgraphic = "M_WONSPR"
+		nointermission
+		exitfade = "00 45 45", 150
+		specialaction = "AngelOfDeath", "Exit_Victory"
+	}
+episode "DMAP01"
+{
+	lookup = "SOD_EPISODE2"
+	picname = "M_EPIS8"
+	key = "H"
+}
+
+	map "DMAP01" lookup "RHUSTR_01"
+	{
+		next = "DMAP02"
+		secretnext = "DMAP02"
+		defaultceiling = "#044000"
+		par = 90
+		music = "XTIPTOE"
+		floornumber = 1
+		cluster = 9
+	}
+
+	map "DMAP02" lookup "RHUSTR_02"
+	{
+		next = "DMAP03"
+		secretnext = "DMAP03"
+		defaultceiling = "#404000"
+		par = 210
+		music = "XFUNKIE"
+		floornumber = 2
+		cluster = 9
+	}
+
+	map "DMAP03" lookup "RHUSTR_03"
+	{
+		next = "DMAP04"
+		secretnext = "DMAP04"
+		par = 225
+		music = "XDEATH"
+		floornumber = 3
+		cluster = 10
+	}
+
+	map "DMAP04" lookup "RHUSTR_04"
+	{
+		next = "DMAP05"
+		secretnext = "DMAP19"
+		defaultceiling = "#382C14"
+		par = 210
+		music = "XGETYOU"
+		floornumber = 4
+		cluster = 10
+	}
+
+	map "DMAP05" lookup "RHUSTR_05"
+	{
+		next = "DMAP06"
+		secretnext = "DMAP06"
+		defaultceiling = "#28200C"
+		music = "ULTIMATE"
+		floornumber = 5
+		cluster = 10
+		completionstring = "$STR_TRANSDEFEATED"
+		levelbonus = 15000
+	}
+
+	map "DMAP06" lookup "RHUSTR_06"
+	{
+		next = "DMAP07"
+		secretnext = "DMAP07"
+		defaultceiling = "#4C0000"
+		par = 270
+		music = "DUNGEON"
+		floornumber = 6
+		cluster = 10
+	}
+
+	map "DMAP07" lookup "RHUSTR_07"
+	{
+		next = "DMAP08"
+		secretnext = "DMAP08"
+		defaultceiling = "#004040"
+		par = 195
+		music = "GOINGAFT"
+		floornumber = 7
+		cluster = 10
+	}
+
+	map "DMAP08" lookup "RHUSTR_08"
+	{
+		next = "DMAP09"
+		secretnext = "DMAP09"
+		defaultceiling = "#00004C"
+		par = 165
+		music = "POW"
+		floornumber = 8
+		cluster = 10
+	}
+
+	map "DMAP09" lookup "RHUSTR_09"
+	{
+		next = "DMAP10"
+		secretnext = "DMAP10"
+		defaultceiling = "#340058"
+		par = 285
+		music = "TWELFTH"
+		floornumber = 9
+		cluster = 10
+	}
+
+	map "DMAP10" lookup "RHUSTR_10"
+	{
+		next = "DMAP11"
+		secretnext = "DMAP11"
+		defaultceiling = "#004040"
+		music = "ULTIMATE"
+		floornumber = 10
+		cluster = 10
+		completionstring = "$STR_WILHELMDEFEATED"
+		levelbonus = 15000
+	}
+
+	map "DMAP11" lookup "RHUSTR_11"
+	{
+		next = "DMAP12"
+		secretnext = "DMAP12"
+		par = 390
+		music = "NAZI_OMI"
+		floornumber = 11
+		cluster = 10
+	}
+
+	map "DMAP12" lookup "RHUSTR_12"
+	{
+		next = "DMAP13"
+		secretnext = "DMAP20"
+		defaultceiling = "#382C14"
+		par = 270
+		music = "GETTHEM"
+		floornumber = 12
+		cluster = 10
+	}
+
+	map "DMAP13" lookup "RHUSTR_13"
+	{
+		next = "DMAP14"
+		secretnext = "DMAP14"
+		defaultceiling = "#28200C"
+		par = 165
+		music = "SUSPENSE"
+		floornumber = 13
+		cluster = 10
+	}
+
+	map "DMAP14" lookup "RHUSTR_14"
+	{
+		next = "DMAP15"
+		secretnext = "DMAP15"
+		defaultceiling = "#382C14"
+		par = 270
+		music = "SEARCHN"
+		floornumber = 14
+		cluster = 10
+	}
+
+	map "DMAP15" lookup "RHUSTR_15"
+	{
+		next = "DMAP16"
+		secretnext = "DMAP16"
+		defaultceiling = "#28200C"
+		par = 360
+		music = "ZEROHOUR"
+		floornumber = 15
+		cluster = 10
+	}
+
+	map "DMAP16" lookup "RHUSTR_16"
+	{
+		next = "DMAP17"
+		secretnext = "DMAP17"
+		defaultceiling = "#382C14"
+		music = "ULTIMATE"
+		floornumber = 16
+		cluster = 10
+		completionstring = "$STR_UBERDEFEATED"
+		levelbonus = 15000
+	}
+
+	map "DMAP17" lookup "RHUSTR_17"
+	{
+		next = "DMAP18"
+		secretnext = "DMAP18"
+		defaultceiling = "#006464"
+		par = 360
+		music = "XPUTIT"
+		floornumber = 17
+		cluster = 10
+	}
+
+	map "DMAP18" lookup "RHUSTR_18"
+	{
+		next = "DMAP21"
+		secretnext = "DMAP21"
+		defaultceiling = "#483818"
+		music = "ULTIMATE"
+		floornumber = 18
+		cluster = 10
+		nointermission
+	}
+
+	map "DMAP19" lookup "RHUSTR_19"
+	{
+		next = "DMAP05"
+		secretnext = "DMAP05"
+		defaultceiling = "#4C0000"
+		music = "XJAZNAZI"
+		floornumber = 19
+		cluster = 10
+		completionstring = "$STR_SECRETTUNNELCOMPLETED"
+		levelbonus = 15000
+		secretdeathsounds = true
+	}
+
+	map "DMAP20" lookup "RHUSTR_20"
+	{
+		next = "DMAP13"
+		secretnext = "DMAP13"
+		music = "XFUNKIE"
+		floornumber = 20
+		cluster = 10
+		completionstring = "$STR_SECRETCASTLECOMPLETED"
+		levelbonus = 15000
+		secretdeathsounds = true
+	}
+
+	map "DMAP21" lookup "RHUSTR_21"
+	{
+   	 	victorynext = EndSequence, "SpearEnding"
+    	next = EndSequence, "SpearEnding"
+    	secretnext = EndSequence, "SpearEnding"
+		defaultceiling = "#483818"
+		music = "XEVIL"
+		floornumber = 18
+		cluster = 10
+		ensureinventory = "GoldKey"
+		highscoresgraphic = "M_WONLOE"
+		nointermission
+		exitfade = "00 45 45", 150
+		specialaction = "DevilIncarnate", "Exit_Victory"
+	}
+episode "CMAP01"
+{
+	lookup = "SOD_EPISODE3"
+	picname = "M_EPIS9"
+	key = "I"
+}
+	map "CMAP01" lookup "CHUSTR_01"
+	{
+		next = "CMAP02"
+		secretnext = "CMAP02"
+		defaultceiling = "#044000"
+		par = 90
+		music = "XTIPTOE"
+		floornumber = 1
+		cluster = 11
+	}
+
+	map "CMAP02" lookup "CHUSTR_02"
+	{
+		next = "CMAP03"
+		secretnext = "CMAP03"
+		defaultceiling = "#404000"
+		par = 210
+		music = "XFUNKIE"
+		floornumber = 2
+		cluster = 11
+	}
+
+	map "CMAP03" lookup "CHUSTR_03"
+	{
+		next = "CMAP04"
+		secretnext = "CMAP04"
+		par = 225
+		music = "XDEATH"
+		floornumber = 3
+		cluster = 12
+	}
+
+	map "CMAP04" lookup "CHUSTR_04"
+	{
+		next = "CMAP05"
+		secretnext = "CMAP19"
+		defaultceiling = "#382C14"
+		par = 210
+		music = "XGETYOU"
+		floornumber = 4
+		cluster = 12
+	}
+
+	map "CMAP05" lookup "CHUSTR_05"
+	{
+		next = "CMAP06"
+		secretnext = "CMAP06"
+		defaultceiling = "#28200C"
+		music = "ULTIMATE"
+		floornumber = 5
+		cluster = 12
+		completionstring = "$STR_TRANSDEFEATED"
+		levelbonus = 15000
+	}
+
+	map "CMAP06" lookup "CHUSTR_06"
+	{
+		next = "CMAP07"
+		secretnext = "CMAP07"
+		defaultceiling = "#4C0000"
+		par = 270
+		music = "DUNGEON"
+		floornumber = 6
+		cluster = 12
+	}
+
+	map "CMAP07" lookup "CHUSTR_07"
+	{
+		next = "CMAP08"
+		secretnext = "CMAP08"
+		defaultceiling = "#004040"
+		par = 195
+		music = "GOINGAFT"
+		floornumber = 7
+		cluster = 12
+	}
+
+	map "CMAP08" lookup "CHUSTR_08"
+	{
+		next = "CMAP09"
+		secretnext = "CMAP09"
+		defaultceiling = "#00004C"
+		par = 165
+		music = "POW"
+		floornumber = 8
+		cluster = 12
+	}
+
+	map "CMAP09" lookup "CHUSTR_09"
+	{
+		next = "CMAP10"
+		secretnext = "CMAP10"
+		defaultceiling = "#340058"
+		par = 285
+		music = "TWELFTH"
+		floornumber = 9
+		cluster = 12
+	}
+
+	map "CMAP10" lookup "CHUSTR_10"
+	{
+		next = "CMAP11"
+		secretnext = "CMAP11"
+		defaultceiling = "#004040"
+		music = "ULTIMATE"
+		floornumber = 10
+		cluster = 12
+		completionstring = "$STR_WILHELMDEFEATED"
+		levelbonus = 15000
+	}
+
+	map "CMAP11" lookup "CHUSTR_11"
+	{
+		next = "CMAP12"
+		secretnext = "CMAP12"
+		par = 390
+		music = "NAZI_OMI"
+		floornumber = 11
+		cluster = 12
+	}
+
+	map "CMAP12" lookup "CHUSTR_12"
+	{
+		next = "CMAP13"
+		secretnext = "CMAP20"
+		defaultceiling = "#382C14"
+		par = 270
+		music = "GETTHEM"
+		floornumber = 12
+		cluster = 12
+	}
+
+	map "CMAP13" lookup "CHUSTR_13"
+	{
+		next = "CMAP14"
+		secretnext = "CMAP14"
+		defaultceiling = "#28200C"
+		par = 165
+		music = "SUSPENSE"
+		floornumber = 13
+		cluster = 12
+	}
+
+	map "CMAP14" lookup "CHUSTR_14"
+	{
+		next = "CMAP15"
+		secretnext = "CMAP15"
+		defaultceiling = "#382C14"
+		par = 270
+		music = "SEARCHN"
+		floornumber = 14
+		cluster = 12
+	}
+
+	map "CMAP15" lookup "CHUSTR_15"
+	{
+		next = "CMAP16"
+		secretnext = "CMAP16"
+		defaultceiling = "#28200C"
+		par = 360
+		music = "ZEROHOUR"
+		floornumber = 15
+		cluster = 12
+	}
+
+	map "CMAP16" lookup "CHUSTR_16"
+	{
+		next = "CMAP17"
+		secretnext = "CMAP17"
+		defaultceiling = "#382C14"
+		music = "ULTIMATE"
+		floornumber = 16
+		cluster = 12
+		completionstring = "$STR_UBERDEFEATED"
+		levelbonus = 15000
+	}
+
+	map "CMAP17" lookup "CHUSTR_17"
+	{
+		next = "CMAP18"
+		secretnext = "CMAP18"
+		defaultceiling = "#006464"
+		par = 360
+		music = "XPUTIT"
+		floornumber = 17
+		cluster = 12
+	}
+
+	map "CMAP18" lookup "CHUSTR_18"
+	{
+		next = "CMAP21"
+		secretnext = "CMAP21"
+		defaultceiling = "#483818"
+		music = "ULTIMATE"
+		floornumber = 18
+		cluster = 12
+		nointermission
+	}
+
+	map "CMAP19" lookup "CHUSTR_19"
+	{
+		next = "CMAP05"
+		secretnext = "CMAP05"
+		defaultceiling = "#4C0000"
+		music = "XJAZNAZI"
+		floornumber = 19
+		cluster = 12
+		completionstring = "$STR_SECRETTUNNELCOMPLETED"
+		levelbonus = 15000
+		secretdeathsounds = true
+	}
+
+	map "CMAP20" lookup "CHUSTR_20"
+	{
+		next = "CMAP13"
+		secretnext = "CMAP13"
+		music = "XFUNKIE"
+		floornumber = 20
+		cluster = 12
+		completionstring = "$STR_SECRETCASTLECOMPLETED"
+		levelbonus = 15000
+		secretdeathsounds = true
+	}
+
+	map "CMAP21" lookup "CHUSTR_21"
+	{
+   	 	victorynext = EndSequence, "SpearEnding"
+    	next = EndSequence, "SpearEnding"
+    	secretnext = EndSequence, "SpearEnding"
+		defaultceiling = "#483818"
+		music = "XEVIL"
+		floornumber = 18
+		cluster = 12
+		ensureinventory = "GoldKey"
+		highscoresgraphic = "M_WONLOE"
+		nointermission
+		exitfade = "00 45 45", 150
+		specialaction = "DevilIncarnate", "Exit_Victory"
+	}
+episode "EMAP01"
+{
+	lookup = "Episode 10\nOriginal Encounter"
+	picname = "M_EPIS10"
+	key = "J"
+}
+	cluster 13
+	{
+		exittext = "ENDART8"
+		exittextislump
+	}
+	map "EMAP01" "Floor 1-1"
+	{
+		next = "EMAP02"
+		secretnext = "EMAP30"
+		floornumber = "1-1"
+		par = 90
+		music = "MUS_0085"
+		cluster = 13
+	}
+
+	map "EMAP02" "Floor 1-2"
+	{
+		next = "EMAP03"
+		secretnext = "EMAP30"
+		floornumber = "1-2"
+		defaultceiling = "#403018"
+		par = 120
+		music = "MUS_0085"
+		cluster = 13
+	}
+
+	map "EMAP03" "Floor 1-3"
+	{
+		next = "EMAP04"
+		secretnext = "EMAP30"
+		defaultceiling = "#383838"
+		floornumber = "1-3"
+		par = 60
+		music = "MUS_0088"
+		cluster = 13
+	}
+
+	map "EMAP04" "Floor 2-1"
+	{
+		next = "EMAP05"
+		secretnext = "EMAP30"
+		defaultceiling = "#9C9C00"
+		floornumber = "2-1"
+		par = 210
+		music = "MUS_0080"
+		cluster = 13
+	}
+
+	map "EMAP05" "Floor 2-2"
+	{
+		next = "EMAP06"
+		secretnext = "EMAP30"
+		floornumber = "2-2"
+		defaultceiling = "#848400"
+		par = 180
+		music = "MUS_0081"
+		cluster = 13
+	}
+
+	map "EMAP06" "Floor 2-3"
+	{
+		next = "EMAP07"
+		secretnext = "EMAP30"
+		floornumber = "2-3"
+		defaultceiling = "#9C9C00"
+		par = 180
+		music = "MUS_0082"
+		cluster = 13
+	}
+
+	map "EMAP07" "Floor 2-4"
+	{
+		next = "EMAP08"
+		secretnext = "EMAP30"
+		floornumber = "2-4"
+		defaultceiling = "#383838"
+		par = 150
+		music = "MUS_0087"
+		cluster = 13
+	}
+
+	map "EMAP08" "Floor 3-1"
+	{
+		next = "EMAP09"
+		secretnext = "EMAP30"
+		floornumber = "3-1"
+		defaultceiling = "#404000"
+		par = 150
+		music = "MUS_008A"
+		cluster = 13
+	}
+
+	map "EMAP09" "Floor 3-2"
+	{
+		next = "EMAP10"
+		defaultceiling = "#585400"
+		secretnext = "EMAP30"
+		floornumber = "3-2"
+		music = "MUS_0080"
+		cluster = 13
+	}
+
+	map "EMAP10" "Floor 3-3"
+	{
+		next = "EMAP11"
+		secretnext = "EMAP30"
+		floornumber = "3-3"
+		music = "MUS_0081"
+		cluster = 13
+	}
+
+	map "EMAP11" "Floor 3-4"
+	{
+		next = "EMAP12"
+		secretnext = "EMAP30"
+		floornumber = "3-4"
+		defaultceiling = "#004040"
+		par = 90
+		music = "MUS_0082"
+		cluster = 13
+	}
+
+	map "EMAP12" "Floor 4-1"
+	{
+		next = "EMAP13"
+		secretnext = "EMAP30"
+		defaultceiling = "#4C0000"
+		floornumber = "4-1"
+		par = 210
+		music = "MUS_0085"
+		cluster = 13
+	}
+
+	map "EMAP13" "Floor 4-2"
+	{
+		next = "EMAP14"
+		secretnext = "EMAP30"
+		defaultceiling = "#545454"
+		floornumber = "4-2"
+		par = 180
+		music = "MUS_0087"
+		cluster = 13
+	}
+
+	map "EMAP14" "Floor 4-3"
+	{
+		next = "EMAP15"
+		secretnext = "EMAP30"
+		floornumber = "4-3"
+		defaultceiling = "#000058"
+		par = 120
+		music = "MUS_0080"
+		cluster = 13
+	}
+
+	map "EMAP15" "Floor 4-4"
+	{
+		next = "EMAP16"
+		secretnext = "EMAP30"
+		defaultceiling = "#403018"
+		floornumber = "4-4"
+		par = 240
+		music = "MUS_0081"
+		cluster = 13
+	}
+
+	map "EMAP16" "Floor 4-5"
+	{
+		next = "EMAP17"
+		secretnext = "EMAP30"
+		floornumber = "4-5"
+		defaultceiling = "#848400"
+		par = 360
+		music = "MUS_0082"
+		cluster = 13
+	}
+
+	map "EMAP17" "Floor 4-6"
+	{
+		next = "EMAP18"
+		secretnext = "EMAP30"
+		floornumber = "4-6"
+		defaultceiling = "#706C00"
+		par = 60
+		music = "MUS_0085"
+		cluster = 13
+	}
+
+	map "EMAP18" "Floor 5-1"
+	{
+		next = "EMAP19"
+		secretnext = "EMAP30"
+		floornumber = "5-1"
+		defaultceiling = "#006C6C"
+		par = 180
+		music = "MUS_0087"
+		cluster = 13
+	}
+
+	map "EMAP19" "Floor 5-2"
+	{
+		next = "EMAP20"
+		secretnext = "EMAP30"
+		floornumber = "5-2"
+		defaultceiling = "#646464"
+		music = "MUS_0080"
+		cluster = 13
+	}
+
+	map "EMAP20" "Floor 5-3"
+	{
+		next = "EMAP21"
+		secretnext = "EMAP20"
+		defaultceiling = "#383838"
+		floornumber = "5-3"
+		music = "MUS_0081"
+		cluster = 13
+	}
+
+	map "EMAP21" "Floor 5-4"
+	{
+		next = "EMAP22"
+		secretnext = "EMAP30"
+		floornumber = "5-4"
+		defaultceiling = "#403018"
+		par = 90
+		music = "MUS_0082"
+		cluster = 13
+	}
+
+	map "EMAP22" "Floor 5-5"
+	{
+		next = "EMAP23"
+		secretnext = "EMAP30"
+		floornumber = "5-5"
+		defaultceiling = "#9C6038"
+		par = 90
+		music = "MUS_0085"
+		cluster = 13
+	}
+
+	map "EMAP23" "Floor 5-6"
+	{
+		next = "EMAP24"
+		secretnext = "EMAP30"
+		floornumber = "5-6"
+		defaultceiling = "#28200C"
+		par = 150
+		music = "MUS_0087"
+		cluster = 13
+	}
+
+	map "EMAP24" "Floor 6-1"
+	{
+		next = "EMAP25"
+		secretnext = "EMAP30"
+		floornumber = "6-1"
+		defaultceiling = "#000040"
+		par = 150
+		music = "MUS_0080"
+		cluster = 13
+	}
+
+	map "EMAP25" "Floor 6-2"
+	{
+		next = "EMAP26"
+		secretnext = "EMAP30"
+		floornumber = "6-2"
+		defaultceiling = "#484848"
+		par = 210
+		music = "MUS_0081"
+		cluster = 13
+	}
+
+	map "EMAP26" "Floor 6-3"
+	{
+		next = "EMAP27"
+		secretnext = "EMAP30"
+		floornumber = "6-3"
+		defaultceiling = "#545454"
+		par = 150
+		music = "MUS_0082"
+		cluster = 13
+	}
+
+	map "EMAP27" "Floor 6-4"
+	{
+		next = "EMAP28"
+		secretnext = "EMAP30"
+		floornumber = "6-4"
+		defaultceiling = "#005858"
+		par = 120
+		music = "MUS_0085"
+		cluster = 13
+	}
+
+	map "EMAP28" "Floor 6-5"
+	{
+		next = "EMAP29"
+		secretnext = "EMAP30"
+		floornumber = "6-5"
+		defaultceiling = "#28200C"
+		par = 360
+		music = "MUS_0087"
+		cluster = 13
+	}
+
+	map "EMAP29" "Floor 6-6"
+	{
+		next = "EndTitle"
+		secretnext = "EMAP30"
+		floornumber = "6-6"
+		music = "MUS_0088"
+		cluster = 13
+		specialaction = "MacHitler2", "Exit_Victory"
+	}
+
+	map "EMAP30" "Floor 6-7"
+	{
+		next = "EMAP09"
+		secretnext = "EMAP30"
+		floornumber = "6-7"
+		music = "MUS_0086"
+		defaultceiling = "#400040"
+		cluster = 13
+		completionstring = "$STR_SECRETCOMPLETED"
+		levelbonus = 15000
+	}
+
+
+//MARATHON
+		intermission SpearCOMP
+		{
+			Fader
+			{
+				Music = "XTHEEND"
+				Background = "#004545", 1
+				Draw = "BJCOLPS1", 124, 44
+				FadeType = FadeIn
+				Time = 15
+			}
+			Image
+			{
+				Draw = "BJCOLPS1", 124, 44
+				Time = -2
+			}
+			Image
+			{
+				Draw = "BJCOLPS2", 124, 44
+				Time = 52.5
+			}
+			Image
+			{
+				Draw = "BJCOLPS3", 124, 44
+				Time = 52.5
+			}
+			Image
+			{
+				Draw = "BJCOLPS4", 124, 44
+				Time = -3
+			}
+			Fader
+			{
+				Draw = "BJCOLPS4", 124, 44
+				FadeType = FadeOut
+				Time = 2.5
+			}
+			
+			Fader
+			{
+				Background = "ENDSCR1", 0
+				FadeType = FadeIn
+				Time = 15
+			}
+			Image {}
+			Fader
+			{
+				FadeType = FadeOut
+				Time = 15
+			}
+			Fader
+			{
+				Background = "ENDSCR3", 0
+				FadeType = FadeIn
+				Time = 15
+			}
+			TextScreen
+			{
+				Position = 160, 180
+				Text = "$STR_ENDGAME1", "$STR_ENDGAME2"
+				TextAlignment = Center
+				TextAnchor = Bottom
+				TextColor = "Cream"
+				TextSpeed = 0
+				TextDelay = 0
+				Time = 350
+			}
+			TextScreen
+			{
+				Position = 160, 180
+				Text = "$STR_ENDGAME3", "$STR_ENDGAME4"
+				TextAlignment = Center
+				TextAnchor = Bottom
+				TextColor = "Cream"
+				TextSpeed = 0
+				TextDelay = 0
+				Time = 350
+			}
+		}
+
+		cluster 15
+		{
+			exitslideshow = "SpearCOMP"
+		}
+		cluster 17
+		{
+			exitslideshow = "SpearCOMP"
+		}
+		cluster 18
+		{
+			exittext = "ENDART13"
+			exittextislump
+		}
+		cluster 19
+		{
+			exittext = "ENDART4"
+			exittextislump
+		}
+		cluster 20
+		{
+			exittext = "ENDART5"
+			exittextislump
+		}
+		cluster 21
+		{
+			exittext = "ENDART6"
+			exittextislump
+		}
+		cluster 22
+		{
+			exittext = "ENDART1"
+			exittextislump
+		}
+		cluster 23
+		{
+			exittext = "ENDART2"
+			exittextislump
+		}
+		cluster 25
+		{
+			exitslideshow = "SpearCOMP"
+		}
+		episode "COMP001"
+		{
+			lookup = "Marathon\n153 levels in order!"
+			picname = "M_DEBG"
+			key = "Z"
+		}
+
+		// Spear of Destiny
+			map "COMP001" lookup "SHUSTR_01"
+			{
+				next = "COMP002"
+				secretnext = "COMP002"
+				defaultceiling = "#044000"
+				par = 90
+				music = "XTIPTOE"
+				floornumber = 1
+				cluster = 14
+			}
+
+			map "COMP002" lookup "SHUSTR_02"
+			{
+				next = "COMP003"
+				secretnext = "COMP003"
+				defaultceiling = "#404000"
+				par = 210
+				music = "XFUNKIE"
+				floornumber = 2
+				cluster = 14
+			}
+
+			map "COMP003" lookup "SHUSTR_03"
+			{
+				next = "COMP004"
+				secretnext = "COMP004"
+				par = 225
+				music = "XDEATH"
+				floornumber = 3
+				cluster = 15
+			}
+
+			map "COMP004" lookup "SHUSTR_04"
+			{
+				next = "COMP005"
+				secretnext = "COMP019"
+				defaultceiling = "#382C14"
+				par = 210
+				music = "XGETYOU"
+				floornumber = 4
+				cluster = 15
+			}
+
+			map "COMP005" lookup "SHUSTR_05"
+			{
+				next = "COMP006"
+				secretnext = "COMP006"
+				defaultceiling = "#28200C"
+				music = "ULTIMATE"
+				floornumber = 5
+				cluster = 15
+				completionstring = "$STR_TRANSDEFEATED"
+				levelbonus = 15000
+			}
+
+			map "COMP006" lookup "SHUSTR_06"
+			{
+				next = "COMP007"
+				secretnext = "COMP007"
+				defaultceiling = "#4C0000"
+				par = 270
+				music = "DUNGEON"
+				floornumber = 6
+				cluster = 15
+			}
+
+			map "COMP007" lookup "SHUSTR_07"
+			{
+				next = "COMP008"
+				secretnext = "COMP008"
+				defaultceiling = "#004040"
+				par = 195
+				music = "GOINGAFT"
+				floornumber = 7
+				cluster = 15
+			}
+
+			map "COMP008" lookup "SHUSTR_08"
+			{
+				next = "COMP009"
+				secretnext = "COMP009"
+				defaultceiling = "#00004C"
+				par = 165
+				music = "POW"
+				floornumber = 8
+				cluster = 15
+			}
+
+			map "COMP009" lookup "SHUSTR_09"
+			{
+				next = "COMP010"
+				secretnext = "COMP010"
+				defaultceiling = "#340058"
+				par = 285
+				music = "TWELFTH"
+				floornumber = 9
+				cluster = 15
+			}
+
+			map "COMP010" lookup "SHUSTR_10"
+			{
+				next = "COMP011"
+				secretnext = "COMP011"
+				defaultceiling = "#004040"
+				music = "ULTIMATE"
+				floornumber = 10
+				cluster = 15
+				completionstring = "$STR_WILHELMDEFEATED"
+				levelbonus = 15000
+			}
+
+			map "COMP011" lookup "SHUSTR_11"
+			{
+				next = "COMP012"
+				secretnext = "COMP012"
+				par = 390
+				music = "NAZI_OMI"
+				floornumber = 11
+				cluster = 15
+			}
+
+			map "COMP012" lookup "SHUSTR_12"
+			{
+				next = "COMP013"
+				secretnext = "COMP020"
+				defaultceiling = "#382C14"
+				par = 270
+				music = "GETTHEM"
+				floornumber = 12
+				cluster = 15
+			}
+
+			map "COMP013" lookup "SHUSTR_13"
+			{
+				next = "COMP014"
+				secretnext = "COMP014"
+				defaultceiling = "#28200C"
+				par = 165
+				music = "SUSPENSE"
+				floornumber = 13
+				cluster = 15
+			}
+
+			map "COMP014" lookup "SHUSTR_14"
+			{
+				next = "COMP015"
+				secretnext = "COMP015"
+				defaultceiling = "#382C14"
+				par = 270
+				music = "SEARCHN"
+				floornumber = 14
+				cluster = 15
+			}
+
+			map "COMP015" lookup "SHUSTR_15"
+			{
+				next = "COMP016"
+				secretnext = "COMP016"
+				defaultceiling = "#28200C"
+				par = 360
+				music = "ZEROHOUR"
+				floornumber = 15
+				cluster = 15
+			}
+
+			map "COMP016" lookup "SHUSTR_16"
+			{
+				next = "COMP017"
+				secretnext = "COMP017"
+				defaultceiling = "#382C14"
+				music = "ULTIMATE"
+				floornumber = 16
+				cluster = 15
+				completionstring = "$STR_UBERDEFEATED"
+				levelbonus = 15000
+			}
+
+			map "COMP017" lookup "SHUSTR_17"
+			{
+				next = "COMP018"
+				secretnext = "COMP018"
+				defaultceiling = "#006464"
+				par = 360
+				music = "XPUTIT"
+				floornumber = 17
+				cluster = 15
+			}
+
+			map "COMP018" lookup "SHUSTR_18"
+			{
+				next = "COMP021"
+				secretnext = "COMP021"
+				defaultceiling = "#483818"
+				music = "ULTIMATE"
+				floornumber = 18
+				cluster = 15
+				nointermission
+			}
+
+			map "COMP019" lookup "SHUSTR_19"
+			{
+				next = "COMP005"
+				secretnext = "COMP005"
+				defaultceiling = "#4C0000"
+				music = "XJAZNAZI"
+				floornumber = 19
+				cluster = 15
+				completionstring = "$STR_SECRETTUNNELCOMPLETED"
+				levelbonus = 15000
+				secretdeathsounds = true
+			}
+
+			map "COMP020" lookup "SHUSTR_20"
+			{
+				next = "COMP013"
+				secretnext = "COMP013"
+				music = "XFUNKIE"
+				floornumber = 20
+				cluster = 15
+				completionstring = "$STR_SECRETCASTLECOMPLETED"
+				levelbonus = 15000
+				secretdeathsounds = true
+			}
+
+			map "COMP021" lookup "SHUSTR_21"
+			{
+				victorynext = "COMP022"
+				next = "COMP022"
+				secretnext = "COMP022"
+				defaultceiling = "#483818"
+				music = "XEVIL"
+				floornumber = 18
+				cluster = 15	
+				ensureinventory = "GoldKey"
+				highscoresgraphic = "M_WONSPR"
+				exitfade = "00 45 45", 150
+			}
+
+		// Return to Danger
+			map "COMP022" lookup "RHUSTR_01"
+			{
+				next = "COMP023"
+				secretnext = "COMP023"
+				defaultceiling = "#044000"
+				par = 90
+				music = "XTIPTOE"
+				floornumber = 1
+				cluster = 16
+			}
+
+			map "COMP023" lookup "RHUSTR_02"
+			{
+				next = "COMP024"
+				secretnext = "COMP024"
+				defaultceiling = "#404000"
+				par = 210
+				music = "XFUNKIE"
+				floornumber = 2
+				cluster = 16
+			}
+
+			map "COMP024" lookup "RHUSTR_03"
+			{
+				next = "COMP025"
+				secretnext = "COMP025"
+				par = 225
+				music = "XDEATH"
+				floornumber = 3
+				cluster = 17
+			}
+
+			map "COMP025" lookup "RHUSTR_04"
+			{
+				next = "COMP026"
+				secretnext = "COMP040"
+				defaultceiling = "#382C14"
+				par = 210
+				music = "XGETYOU"
+				floornumber = 4
+				cluster = 17
+			}
+
+			map "COMP026" lookup "RHUSTR_05"
+			{
+				next = "COMP027"
+				secretnext = "COMP027"
+				defaultceiling = "#28200C"
+				music = "ULTIMATE"
+				floornumber = 5
+				cluster = 17
+				completionstring = "$STR_TRANSDEFEATED"
+				levelbonus = 15000
+			}
+
+			map "COMP027" lookup "RHUSTR_06"
+			{
+				next = "COMP028"
+				secretnext = "COMP028"
+				defaultceiling = "#4C0000"
+				par = 270
+				music = "DUNGEON"
+				floornumber = 6
+				cluster = 17
+			}
+
+			map "COMP028" lookup "RHUSTR_07"
+			{
+				next = "COMP029"
+				secretnext = "COMP029"
+				defaultceiling = "#004040"
+				par = 195
+				music = "GOINGAFT"
+				floornumber = 7
+				cluster = 17
+			}
+
+			map "COMP029" lookup "RHUSTR_08"
+			{
+				next = "COMP030"
+				secretnext = "COMP030"
+				defaultceiling = "#00004C"
+				par = 165
+				music = "POW"
+				floornumber = 8
+				cluster = 17
+			}
+
+			map "COMP030" lookup "RHUSTR_09"
+			{
+				next = "COMP031"
+				secretnext = "COMP031"
+				defaultceiling = "#340058"
+				par = 285
+				music = "TWELFTH"
+				floornumber = 9
+				cluster = 17
+			}
+
+			map "COMP031" lookup "RHUSTR_10"
+			{
+				next = "COMP032"
+				secretnext = "COMP032"
+				defaultceiling = "#004040"
+				music = "ULTIMATE"
+				floornumber = 10
+				cluster = 17
+				completionstring = "$STR_WILHELMDEFEATED"
+				levelbonus = 15000
+			}
+
+			map "COMP032" lookup "RHUSTR_11"
+			{
+				next = "COMP033"
+				secretnext = "COMP033"
+				par = 390
+				music = "NAZI_OMI"
+				floornumber = 11
+				cluster = 17
+			}
+
+			map "COMP033" lookup "RHUSTR_12"
+			{
+				next = "COMP034"
+				secretnext = "COMP041"
+				defaultceiling = "#382C14"
+				par = 270
+				music = "GETTHEM"
+				floornumber = 12
+				cluster = 17
+			}
+
+			map "COMP034" lookup "RHUSTR_13"
+			{
+				next = "COMP035"
+				secretnext = "COMP035"
+				defaultceiling = "#28200C"
+				par = 165
+				music = "SUSPENSE"
+				floornumber = 13
+				cluster = 17
+			}
+
+			map "COMP035" lookup "RHUSTR_14"
+			{
+				next = "COMP036"
+				secretnext = "COMP036"
+				defaultceiling = "#382C14"
+				par = 270
+				music = "SEARCHN"
+				floornumber = 14
+				cluster = 17
+			}
+
+			map "COMP036" lookup "RHUSTR_15"
+			{
+				next = "COMP037"
+				secretnext = "COMP037"
+				defaultceiling = "#28200C"
+				par = 360
+				music = "ZEROHOUR"
+				floornumber = 15
+				cluster = 17
+			}
+
+			map "COMP037" lookup "RHUSTR_16"
+			{
+				next = "COMP038"
+				secretnext = "COMP038"
+				defaultceiling = "#382C14"
+				music = "ULTIMATE"
+				floornumber = 16
+				cluster = 17
+				completionstring = "$STR_UBERDEFEATED"
+				levelbonus = 15000
+			}
+
+			map "COMP038" lookup "RHUSTR_17"
+			{
+				next = "COMP039"
+				secretnext = "COMP039"
+				defaultceiling = "#006464"
+				par = 360
+				music = "XPUTIT"
+				floornumber = 17
+				cluster = 17
+			}
+
+			map "COMP039" lookup "RHUSTR_18"
+			{
+				next = "COMP042"
+				secretnext = "COMP042"
+				defaultceiling = "#483818"
+				music = "ULTIMATE"
+				floornumber = 18
+				cluster = 17
+				nointermission
+			}
+
+			map "COMP040" lookup "RHUSTR_19"
+			{
+				next = "COMP026"
+				secretnext = "COMP026"
+				defaultceiling = "#4C0000"
+				music = "XJAZNAZI"
+				floornumber = 19
+				cluster = 17
+				completionstring = "$STR_SECRETTUNNELCOMPLETED"
+				levelbonus = 15000
+				secretdeathsounds = true
+			}
+
+			map "COMP041" lookup "RHUSTR_20"
+			{
+				next = "COMP034"
+				secretnext = "COMP034"
+				music = "XFUNKIE"
+				floornumber = 20
+				cluster = 17
+				completionstring = "$STR_SECRETCASTLECOMPLETED"
+				levelbonus = 15000
+				secretdeathsounds = true
+			}
+
+			map "COMP042" lookup "RHUSTR_21"
+			{
+				victorynext = "COMP043"
+				next = "COMP043"
+				secretnext = "COMP043"
+				defaultceiling = "#483818"
+				music = "XEVIL"
+				floornumber = 18
+				cluster = 17
+				ensureinventory = "GoldKey"
+				highscoresgraphic = "M_WONLOE"
+				exitfade = "00 45 45", 150
+			}
+
+		// Original Encounter
+			map "COMP043" "Floor 1-1"
+			{
+				next = "COMP044"
+				secretnext = "COMP072"
+				floornumber = "1-1"
+				par = 90
+				music = "MUS_0085"
+				cluster = 18
+			}
+
+			map "COMP044" "Floor 1-2"
+			{
+				next = "COMP045"
+				secretnext = "COMP072"
+				floornumber = "1-2"
+				defaultceiling = "#403018"
+				par = 120
+				music = "MUS_0085"
+				cluster = 18
+			}
+
+			map "COMP045" "Floor 1-3"
+			{
+				next = "COMP046"
+				secretnext = "COMP072"
+				defaultceiling = "#383838"
+				floornumber = "1-3"
+				par = 60
+				music = "MUS_0088"
+				cluster = 18
+			}
+
+			map "COMP046" "Floor 2-1"
+			{
+				next = "COMP047"
+				secretnext = "COMP072"
+				defaultceiling = "#9C9C00"
+				floornumber = "2-1"
+				par = 210
+				music = "MUS_0080"
+				cluster = 18
+			}
+
+			map "COMP047" "Floor 2-2"
+			{
+				next = "COMP048"
+				secretnext = "COMP072"
+				floornumber = "2-2"
+				defaultceiling = "#848400"
+				par = 180
+				music = "MUS_0081"
+				cluster = 18
+			}
+
+			map "COMP048" "Floor 2-3"
+			{
+				next = "COMP049"
+				secretnext = "COMP072"
+				floornumber = "2-3"
+				defaultceiling = "#9C9C00"
+				par = 180
+				music = "MUS_0082"
+				cluster = 18
+			}
+
+			map "COMP049" "Floor 2-4"
+			{
+				next = "COMP050"
+				secretnext = "COMP072"
+				floornumber = "2-4"
+				defaultceiling = "#383838"
+				par = 150
+				music = "MUS_0087"
+				cluster = 18
+			}
+
+			map "COMP050" "Floor 3-1"
+			{
+				next = "COMP051"
+				secretnext = "COMP072"
+				floornumber = "3-1"
+				defaultceiling = "#404000"
+				par = 150
+				music = "MUS_008A"
+				cluster = 18
+			}
+
+			map "COMP051" "Floor 3-2"
+			{
+				next = "COMP052"
+				defaultceiling = "#585400"
+				secretnext = "COMP072"
+				floornumber = "3-2"
+				music = "MUS_0080"
+				cluster = 18
+			}
+
+			map "COMP052" "Floor 3-3"
+			{
+				next = "COMP053"
+				secretnext = "COMP072"
+				floornumber = "3-3"
+				music = "MUS_0081"
+				cluster = 18
+			}
+
+			map "COMP053" "Floor 3-4"
+			{
+				next = "COMP054"
+				secretnext = "COMP072"
+				floornumber = "3-4"
+				defaultceiling = "#004040"
+				par = 90
+				music = "MUS_0082"
+				cluster = 18
+			}
+
+			map "COMP054" "Floor 4-1"
+			{
+				next = "COMP055"
+				secretnext = "COMP072"
+				defaultceiling = "#4C0000"
+				floornumber = "4-1"
+				par = 210
+				music = "MUS_0085"
+				cluster = 18
+			}
+
+			map "COMP055" "Floor 4-2"
+			{
+				next = "COMP056"
+				secretnext = "COMP072"
+				defaultceiling = "#545454"
+				floornumber = "4-2"
+				par = 180
+				music = "MUS_0087"
+				cluster = 18
+			}
+
+			map "COMP056" "Floor 4-3"
+			{
+				next = "COMP057"
+				secretnext = "COMP072"
+				floornumber = "4-3"
+				defaultceiling = "#000058"
+				par = 120
+				music = "MUS_0080"
+				cluster = 18
+			}
+
+			map "COMP057" "Floor 4-4"
+			{
+				next = "COMP058"
+				secretnext = "COMP072"
+				defaultceiling = "#403018"
+				floornumber = "4-4"
+				par = 240
+				music = "MUS_0081"
+				cluster = 18
+			}
+
+			map "COMP058" "Floor 4-5"
+			{
+				next = "COMP059"
+				secretnext = "COMP072"
+				floornumber = "4-5"
+				defaultceiling = "#848400"
+				par = 360
+				music = "MUS_0082"
+				cluster = 18
+			}
+
+			map "COMP059" "Floor 4-6"
+			{
+				next = "COMP060"
+				secretnext = "COMP072"
+				floornumber = "4-6"
+				defaultceiling = "#706C00"
+				par = 60
+				music = "MUS_0085"
+				cluster = 18
+			}
+
+			map "COMP060" "Floor 5-1"
+			{
+				next = "COMP061"
+				secretnext = "COMP072"
+				floornumber = "5-1"
+				defaultceiling = "#006C6C"
+				par = 180
+				music = "MUS_0087"
+				cluster = 18
+			}
+
+			map "COMP061" "Floor 5-2"
+			{
+				next = "COMP062"
+				secretnext = "COMP072"
+				floornumber = "5-2"
+				defaultceiling = "#646464"
+				music = "MUS_0080"
+				cluster = 18
+			}
+
+			map "COMP062" "Floor 5-3"
+			{
+				next = "COMP063"
+				secretnext = "COMP062"
+				defaultceiling = "#383838"
+				floornumber = "5-3"
+				music = "MUS_0081"
+				cluster = 18
+			}
+
+			map "COMP063" "Floor 5-4"
+			{
+				next = "COMP064"
+				secretnext = "COMP072"
+				floornumber = "5-4"
+				defaultceiling = "#403018"
+				par = 90
+				music = "MUS_0082"
+				cluster = 18
+			}
+
+			map "COMP064" "Floor 5-5"
+			{
+				next = "COMP065"
+				secretnext = "COMP072"
+				floornumber = "5-5"
+				defaultceiling = "#9C6038"
+				par = 90
+				music = "MUS_0085"
+				cluster = 18
+			}
+
+			map "COMP065" "Floor 5-6"
+			{
+				next = "COMP066"
+				secretnext = "COMP072"
+				floornumber = "5-6"
+				defaultceiling = "#28200C"
+				par = 150
+				music = "MUS_0087"
+				cluster = 18
+			}
+
+			map "COMP066" "Floor 6-1"
+			{
+				next = "COMP067"
+				secretnext = "COMP072"
+				floornumber = "6-1"
+				defaultceiling = "#000040"
+				par = 150
+				music = "MUS_0080"
+				cluster = 18
+			}
+
+			map "COMP067" "Floor 6-2"
+			{
+				next = "COMP068"
+				secretnext = "COMP072"
+				floornumber = "6-2"
+				defaultceiling = "#484848"
+				par = 210
+				music = "MUS_0081"
+				cluster = 18
+			}
+
+			map "COMP068" "Floor 6-3"
+			{
+				next = "COMP069"
+				secretnext = "COMP072"
+				floornumber = "6-3"
+				defaultceiling = "#545454"
+				par = 150
+				music = "MUS_0082"
+				cluster = 18
+			}
+
+			map "COMP069" "Floor 6-4"
+			{
+				next = "COMP070"
+				secretnext = "COMP072"
+				floornumber = "6-4"
+				defaultceiling = "#005858"
+				par = 120
+				music = "MUS_0085"
+				cluster = 18
+			}
+
+			map "COMP070" "Floor 6-5"
+			{
+				next = "COMP071"
+				secretnext = "COMP072"
+				floornumber = "6-5"
+				defaultceiling = "#28200C"
+				par = 360
+				music = "MUS_0087"
+				cluster = 18
+			}
+
+			map "COMP071" "Floor 6-6"
+			{
+				victorynext = "COMP073"
+				next = "COMP073"
+				secretnext = "COMP072"
+				floornumber = "6-6"
+				music = "MUS_0088"
+				cluster = 18
+				specialaction = "MacHitler2", "COMP073"
+			}
+
+			map "COMP072" "Floor 6-7"
+			{
+				next = "COMP051"
+				secretnext = "COMP072"
+				floornumber = "6-7"
+				music = "MUS_0086"
+				defaultceiling = "#400040"
+				cluster = 18
+				completionstring = "$STR_SECRETCOMPLETED"
+				levelbonus = 15000
+			}
+
+		// Nocturnal Missions
+			//Episode 4
+				map "COMP073"
+				{
+					next = "COMP074"
+					secretnext = "COMP082"
+					floornumber = 1
+					par = 120
+					music = "GETTHEM"
+					cluster = 19
+				}
+
+				map "COMP074"
+				{
+					next = "COMP075"
+					secretnext = "COMP082"
+					defaultceiling = "#000058"
+					floornumber = 2
+					par = 120
+					music = "SEARCHN"
+					cluster = 19
+				}
+
+				map "COMP075"
+				{
+					next = "COMP076"
+					secretnext = "COMP082"
+					defaultceiling = "#580000"
+					floornumber = 3
+					par = 90
+					music = "POW"
+					cluster = 19
+				}
+
+				map "COMP076"
+				{
+					next = "COMP077"
+					secretnext = "COMP082"
+					defaultceiling = "#483818"
+					floornumber = 4
+					par = 60
+					music = "SUSPENSE"
+					cluster = 19
+				}
+
+				map "COMP077"
+				{
+					next = "COMP078"
+					secretnext = "COMP082"
+					defaultceiling = "#483818"
+					floornumber = 5
+					par = 270
+					music = "GETTHEM"
+					cluster = 19
+				}
+
+				map "COMP078"
+				{
+					next = "COMP079"
+					secretnext = "COMP082"
+					defaultceiling = "#000058"
+					floornumber = 6
+					par = 210
+					music = "SEARCHN"
+					cluster = 19
+				}
+
+				map "COMP079"
+				{
+					next = "COMP080"
+					secretnext = "COMP082"
+					defaultceiling = "#580000"
+					floornumber = 7
+					par = 120
+					music = "POW"
+					cluster = 19
+				}
+
+				map "COMP080"
+				{
+					next = "COMP081"
+					secretnext = "COMP082"
+					defaultceiling = "#716D00"
+					floornumber = 8
+					par = 270
+					music = "SUSPENSE"
+					cluster = 19
+				}
+
+				map "COMP081"
+				{
+					next = "COMP083"
+					secretnext = "COMP082"
+					floornumber = 9
+					music = "WARMARCH"
+					highscoresgraphic = "M_WONEP4"
+					cluster = 19
+				}
+
+				map "COMP082"
+				{
+					next = "COMP076"
+					secretnext = "COMP082"
+					defaultceiling = "#483818"
+					floornumber = 10
+					music = "CORNER"
+					cluster = 19
+					completionstring = "$STR_SECRETCOMPLETED"
+					levelbonus = 15000
+				}
+			//Episode 5
+				map "COMP083"
+				{
+					next = "COMP084"
+					secretnext = "COMP092"
+					defaultceiling = "#007070"
+					floornumber = 1
+					par = 150
+					music = "NAZI_OMI"
+					cluster = 20
+				}
+
+				map "COMP084"
+				{
+					next = "COMP085"
+					secretnext = "COMP092"
+					floornumber = 2
+					par = 90
+					music = "PREGNANT"
+					cluster = 20
+				}
+
+				map "COMP085"
+				{
+					next = "COMP086"
+					secretnext = "COMP092"
+					defaultceiling = "#580000"
+					floornumber = 3
+					par = 150
+					music = "GOINGAFT"
+					cluster = 20
+				}
+
+				map "COMP086"
+				{
+					next = "COMP087"
+					secretnext = "COMP092"
+					defaultceiling = "#580000"
+					floornumber = 4
+					par = 150
+					music = "HEADACHE"
+					cluster = 20
+				}
+
+				map "COMP087"
+				{
+					next = "COMP088"
+					secretnext = "COMP092"
+					defaultceiling = "#483818"
+					floornumber = 5
+					par = 240
+					music = "NAZI_OMI"
+					cluster = 20
+				}
+
+				map "COMP088"
+				{
+					next = "COMP089"
+					secretnext = "COMP092"
+					defaultceiling = "#80502C"
+					floornumber = 6
+					par = 180
+					music = "PREGNANT"
+					cluster = 20
+				}
+
+				map "COMP089"
+				{
+					next = "COMP090"
+					secretnext = "COMP092"
+					floornumber = 7
+					par = 270
+					music = "HEADACHE"
+					cluster = 20
+				}
+
+				map "COMP090"
+				{
+					next = "COMP091"
+					secretnext = "COMP092"
+					floornumber = 8
+					par = 210
+					music = "GOINGAFT"
+					cluster = 20
+				}
+
+				map "COMP091"
+				{
+					next = "COMP093"
+					secretnext = "COMP092"
+					floornumber = 9
+					music = "WARMARCH"
+					highscoresgraphic = "M_WONEP5"
+					cluster = 20
+				}
+
+				map "COMP092"
+				{
+					next = "COMP088"
+					secretnext = "COMP092"
+					defaultceiling = "#580000"
+					floornumber = 10
+					music = "DUNGEON"
+					cluster = 20
+					completionstring = "$STR_SECRETCOMPLETED"
+					levelbonus = 15000
+				}
+			//Episode 6
+				map "COMP093"
+				{
+					next = "COMP094"
+					secretnext = "COMP102"
+					floornumber = 1
+					par = 390
+					music = "INTROCW3"
+					cluster = 21
+				}
+
+				map "COMP094"
+				{
+					next = "COMP095"
+					secretnext = "COMP102"
+					floornumber = 2
+					par = 240
+					music = "NAZI_RAP"
+					cluster = 21
+				}
+
+				map "COMP095"
+				{
+					next = "COMP096"
+					secretnext = "COMP102"
+					floornumber = 3
+					par = 270
+					music = "TWELFTH"
+					cluster = 21
+				}
+
+				map "COMP096"
+				{
+					next = "COMP097"
+					secretnext = "COMP102"
+					floornumber = 4
+					par = 360
+					music = "ZEROHOUR"
+					cluster = 21
+				}
+
+				map "COMP097"
+				{
+					next = "COMP098"
+					secretnext = "COMP102"
+					defaultceiling = "#483818"
+					floornumber = 5
+					par = 300
+					music = "INTROCW3"
+					cluster = 21
+				}
+
+				map "COMP098"
+				{
+					next = "COMP099"
+					secretnext = "COMP102"
+					defaultceiling = "#483818"
+					floornumber = 6
+					par = 330
+					music = "NAZI_RAP"
+					cluster = 21
+				}
+
+				map "COMP099"
+				{
+					next = "COMP100"
+					secretnext = "COMP102"
+					defaultceiling = "#007070"
+					floornumber = 7
+					par = 330
+					music = "TWELFTH"
+					cluster = 21
+				}
+
+				map "COMP100"
+				{
+					next = "COMP101"
+					secretnext = "COMP102"
+					defaultceiling = "#483818"
+					floornumber = 8
+					par = 510
+					music = "ZEROHOUR"
+					cluster = 21
+				}
+
+				map "COMP101"
+				{
+					next = "COMP103"
+					secretnext = "COMP102"
+					defaultceiling = "#483818"
+					floornumber = 9
+					music = "ULTIMATE"
+					highscoresgraphic = "M_WONEP6"
+					cluster = 21
+				}
+
+				map "COMP102"
+				{
+					next = "COMP096"
+					secretnext = "COMP102"
+					defaultceiling = "#483818"
+					floornumber = 10
+					music = "FUNKYOU"
+					cluster = 21
+					completionstring = "$STR_SECRETCOMPLETED"
+					levelbonus = 15000
+				}
+
+		//Episode 1 
+			map "COMP103"
+			{
+				next = "COMP104"
+				secretnext = "COMP112"
+				floornumber = 1
+				par = 90
+				music = "GETTHEM"
+				cluster = 22
+			}
+
+			map "COMP104"
+			{
+				next = "COMP105"
+				secretnext = "COMP112"
+				floornumber = 2
+				par = 120
+				music = "SEARCHN"
+				cluster = 22
+			}
+
+			map "COMP105"
+			{
+				next = "COMP106"
+				secretnext = "COMP112"
+				floornumber = 3
+				par = 120
+				music = "POW"
+				cluster = 22
+			}
+
+			map "COMP106"
+			{
+				next = "COMP107"
+				secretnext = "COMP112"
+				floornumber = 4
+				par = 210
+				music = "SUSPENSE"
+				cluster = 22
+			}
+
+			map "COMP107"
+			{
+				next = "COMP108"
+				secretnext = "COMP112"
+				floornumber = 5
+				par = 180
+				music = "GETTHEM"
+				cluster = 22
+			}
+
+			map "COMP108"
+			{
+				next = "COMP109"
+				secretnext = "COMP112"
+				floornumber = 6
+				par = 180
+				music = "SEARCHN"
+				cluster = 22
+			}
+
+			map "COMP109"
+			{
+				next = "COMP110"
+				secretnext = "COMP112"
+				floornumber = 7
+				par = 150
+				music = "POW"
+				cluster = 22
+			}
+
+			map "COMP110"
+			{
+				next = "COMP111"
+				secretnext = "COMP112"
+				floornumber = 8
+				par = 150
+				music = "SUSPENSE"
+				cluster = 22
+			}
+
+			map "COMP111"
+			{
+				next = "COMP113"
+				secretnext = "COMP112"
+				floornumber = 9
+				music = "WARMARCH"
+				highscoresgraphic = "M_WONEP1"
+				cluster = 22
+			}
+
+			map "COMP112"
+			{
+				next = "COMP104"
+				secretnext = "COMP112"
+				defaultceiling = "#400040"
+				floornumber = 10
+				music = "CORNER"
+				cluster = 22
+				completionstring = "$STR_SECRETCOMPLETED"
+				levelbonus = 15000
+				secretdeathsounds = true
+			}
+		//Episode 2 
+			map "COMP113"
+			{
+				next = "COMP114"
+				secretnext = "COMP122"
+				defaultceiling = "#585400"
+				floornumber = 1
+				par = 90
+				music = "NAZI_OMI"
+				cluster = 23
+			}
+
+			map "COMP114"
+			{
+				next = "COMP115"
+				secretnext = "COMP122"
+				defaultceiling = "#585400"
+				floornumber = 2
+				par = 210
+				music = "PREGNANT"
+				cluster = 23
+			}
+
+			map "COMP115"
+			{
+				next = "COMP116"
+				secretnext = "COMP122"
+				defaultceiling = "#585400"
+				floornumber = 3
+				par = 180
+				music = "GOINGAFT"
+				cluster = 23
+			}
+
+			map "COMP116"
+			{
+				next = "COMP117"
+				secretnext = "COMP122"
+				floornumber = 4
+				par = 120
+				music = "HEADACHE"
+				cluster = 23
+			}
+
+			map "COMP117"
+			{
+				next = "COMP118"
+				secretnext = "COMP122"
+				defaultceiling = "#4040FC"
+				floornumber = 5
+				par = 240
+				music = "NAZI_OMI"
+				cluster = 23
+			}
+
+			map "COMP118"
+			{
+				next = "COMP119"
+				secretnext = "COMP122"
+				defaultceiling = "#585400"
+				floornumber = 6
+				par = 360
+				music = "PREGNANT"
+				cluster = 23
+			}
+
+			map "COMP119"
+			{
+				next = "COMP120"
+				secretnext = "COMP122"
+				floornumber = 7
+				par = 60
+				music = "HEADACHE"
+				cluster = 23
+			}
+
+			map "COMP120"
+			{
+				next = "COMP121"
+				secretnext = "COMP122"
+				defaultceiling = "#580000"
+				floornumber = 8
+				par = 180
+				music = "GOINGAFT"
+				cluster = 23
+			}
+
+			map "COMP121"
+			{
+				next = "COMP123"
+				secretnext = "COMP122"
+				floornumber = 9
+				music = "WARMARCH"
+				highscoresgraphic = "M_WONEP2"
+				cluster = 23
+			}
+
+			map "COMP122"
+			{
+				next = "COMP114"
+				secretnext = "COMP122"
+				defaultceiling = "#4040FC"
+				floornumber = 10
+				music = "DUNGEON"
+				cluster = 23
+				completionstring = "$STR_SECRETCOMPLETED"
+				levelbonus = 15000
+			}
+
+		// Ultimate Challenge
+			map "COMP123" lookup "CHUSTR_01"
+			{
+				next = "COMP124"
+				secretnext = "COMP124"
+				defaultceiling = "#044000"
+				par = 90
+				music = "XTIPTOE"
+				floornumber = 1
+				cluster = 24
+			}
+
+			map "COMP124" lookup "CHUSTR_02"
+			{
+				next = "COMP125"
+				secretnext = "COMP125"
+				defaultceiling = "#404000"
+				par = 210
+				music = "XFUNKIE"
+				floornumber = 2
+				cluster = 24
+			}
+
+			map "COMP125" lookup "CHUSTR_03"
+			{
+				next = "COMP126"
+				secretnext = "COMP126"
+				par = 225
+				music = "XDEATH"
+				floornumber = 3
+				cluster = 25
+			}
+
+			map "COMP126" lookup "CHUSTR_04"
+			{
+				next = "COMP127"
+				secretnext = "COMP141"
+				defaultceiling = "#382C14"
+				par = 210
+				music = "XGETYOU"
+				floornumber = 4
+				cluster = 25
+			}
+
+			map "COMP127" lookup "CHUSTR_05"
+			{
+				next = "COMP128"
+				secretnext = "COMP128"
+				defaultceiling = "#28200C"
+				music = "ULTIMATE"
+				floornumber = 5
+				cluster = 25
+				completionstring = "$STR_TRANSDEFEATED"
+				levelbonus = 15000
+			}
+
+			map "COMP128" lookup "CHUSTR_06"
+			{
+				next = "COMP129"
+				secretnext = "COMP129"
+				defaultceiling = "#4C0000"
+				par = 270
+				music = "DUNGEON"
+				floornumber = 6
+				cluster = 25
+			}
+
+			map "COMP129" lookup "CHUSTR_07"
+			{
+				next = "COMP130"
+				secretnext = "COMP130"
+				defaultceiling = "#004040"
+				par = 195
+				music = "GOINGAFT"
+				floornumber = 7
+				cluster = 25
+			}
+
+			map "COMP130" lookup "CHUSTR_08"
+			{
+				next = "COMP131"
+				secretnext = "COMP131"
+				defaultceiling = "#00004C"
+				par = 165
+				music = "POW"
+				floornumber = 8
+				cluster = 25
+			}
+
+			map "COMP131" lookup "CHUSTR_09"
+			{
+				next = "COMP132"
+				secretnext = "COMP132"
+				defaultceiling = "#340058"
+				par = 285
+				music = "TWELFTH"
+				floornumber = 9
+				cluster = 25
+			}
+
+			map "COMP132" lookup "CHUSTR_10"
+			{
+				next = "COMP133"
+				secretnext = "COMP133"
+				defaultceiling = "#004040"
+				music = "ULTIMATE"
+				floornumber = 10
+				cluster = 25
+				completionstring = "$STR_WILHELMDEFEATED"
+				levelbonus = 15000
+			}
+
+			map "COMP133" lookup "CHUSTR_11"
+			{
+				next = "COMP134"
+				secretnext = "COMP134"
+				par = 390
+				music = "NAZI_OMI"
+				floornumber = 11
+				cluster = 25
+			}
+
+			map "COMP134" lookup "CHUSTR_12"
+			{
+				next = "COMP135"
+				secretnext = "COMP142"
+				defaultceiling = "#382C14"
+				par = 270
+				music = "GETTHEM"
+				floornumber = 12
+				cluster = 25
+			}
+
+			map "COMP135" lookup "CHUSTR_13"
+			{
+				next = "COMP136"
+				secretnext = "COMP136"
+				defaultceiling = "#28200C"
+				par = 165
+				music = "SUSPENSE"
+				floornumber = 13
+				cluster = 25
+			}
+
+			map "COMP136" lookup "CHUSTR_14"
+			{
+				next = "COMP137"
+				secretnext = "COMP137"
+				defaultceiling = "#382C14"
+				par = 270
+				music = "SEARCHN"
+				floornumber = 14
+				cluster = 25
+			}
+
+			map "COMP137" lookup "CHUSTR_15"
+			{
+				next = "COMP138"
+				secretnext = "COMP138"
+				defaultceiling = "#28200C"
+				par = 360
+				music = "ZEROHOUR"
+				floornumber = 15
+				cluster = 25
+			}
+
+			map "COMP138" lookup "CHUSTR_16"
+			{
+				next = "COMP139"
+				secretnext = "COMP139"
+				defaultceiling = "#382C14"
+				music = "ULTIMATE"
+				floornumber = 16
+				cluster = 25
+				completionstring = "$STR_UBERDEFEATED"
+				levelbonus = 15000
+			}
+
+			map "COMP139" lookup "CHUSTR_17"
+			{
+				next = "COMP140"
+				secretnext = "COMP140"
+				defaultceiling = "#006464"
+				par = 360
+				music = "XPUTIT"
+				floornumber = 17
+				cluster = 25
+			}
+
+			map "COMP140" lookup "CHUSTR_18"
+			{
+				next = "COMP143"
+				secretnext = "COMP143"
+				defaultceiling = "#483818"
+				music = "ULTIMATE"
+				floornumber = 18
+				cluster = 25
+				nointermission
+			}
+
+			map "COMP141" lookup "CHUSTR_19"
+			{
+				next = "COMP127"
+				secretnext = "COMP127"
+				defaultceiling = "#4C0000"
+				music = "XJAZNAZI"
+				floornumber = 19
+				cluster = 25
+				completionstring = "$STR_SECRETTUNNELCOMPLETED"
+				levelbonus = 15000
+				secretdeathsounds = true
+			}
+
+			map "COMP142" lookup "CHUSTR_20"
+			{
+				next = "COMP135"
+				secretnext = "COMP135"
+				music = "XFUNKIE"
+				floornumber = 20
+				cluster = 25
+				completionstring = "$STR_SECRETCASTLECOMPLETED"
+				levelbonus = 15000
+				secretdeathsounds = true
+			}
+
+			map "COMP143" lookup "CHUSTR_21"
+			{
+				victorynext = "COMP144"
+				next = "COMP144"
+				secretnext = "COMP144"
+				defaultceiling = "#483818"
+				music = "XEVIL"
+				floornumber = 18
+				cluster = 25
+				ensureinventory = "GoldKey"
+				highscoresgraphic = "M_WONLOE"
+				exitfade = "00 45 45", 150
+			}
+
+		// Die, Führer Die!
+			map "COMP144"
+			{
+				next = "COMP145"
+				secretnext = "COMP153"
+				floornumber = 1
+				par = 90
+				music = "INTROCW3"
+				cluster = 26
+			}
+
+			map "COMP145"
+			{
+				next = "COMP146"
+				secretnext = "COMP153"
+				floornumber = 2
+				par = 90
+				music = "NAZI_RAP"
+				cluster = 26
+			}
+
+			map "COMP146"
+			{
+				next = "COMP147"
+				secretnext = "COMP153"
+				floornumber = 3
+				par = 150
+				music = "TWELFTH"
+				cluster = 26
+			}
+
+			map "COMP147"
+			{
+				next = "COMP148"
+				secretnext = "COMP153"
+				floornumber = 4
+				par = 150
+				music = "ZEROHOUR"
+				cluster = 26
+			}
+
+			map "COMP148"
+			{
+				next = "COMP149"
+				secretnext = "COMP153"
+				floornumber = 5
+				par = 210
+				music = "INTROCW3"
+				cluster = 26
+			}
+
+			map "COMP149"
+			{
+				next = "COMP150"
+				secretnext = "COMP153"
+				defaultceiling = "#580000"
+				floornumber = 6
+				par = 150
+				music = "NAZI_RAP"
+				cluster = 26
+			}
+
+			map "COMP150"
+			{
+				next = "COMP151"
+				secretnext = "COMP153"
+				defaultceiling = "#483818"
+				floornumber = 7
+				par = 120
+				music = "TWELFTH"
+				cluster = 26
+			}
+
+			map "COMP151"
+			{
+				next = "COMP152"
+				secretnext = "COMP153"
+				floornumber = 8
+				par = 360
+				music = "ZEROHOUR"
+				cluster = 26
+			}
+
+			map "COMP152"
+			{
+				next = "EndTitle"
+				secretnext = "COMP153"
+				floornumber = 9
+				music = "ULTIMATE"
+				highscoresgraphic = "M_WONEP3"
+				cluster = 26
+			}
+
+			map "COMP153"
+			{
+				next = "COMP151"
+				secretnext = "COMP153"
+				defaultceiling = "#000098"
+				floornumber = 10
+				music = "PACMAN"
+				cluster = 26
+				completionstring = "$STR_SECRETCOMPLETED"
+				levelbonus = 15000
+			}

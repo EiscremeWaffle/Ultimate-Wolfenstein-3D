@@ -1,0 +1,37 @@
+actor Robot : DeathKnight 102
+{
+	seesound "robot/sight"
+	deathsound "robot/death"
+	attacksound "robot/attack"
+	dropitem "YellowKey"
+	states
+	{
+		Spawn:
+			ROBO A -1 NOP A_Look(0, 0, 0, 0, 360)
+			stop
+		See:
+			ROBO A 5 NOP A_Chase("*", "*", CHF_BACKOFF)
+			ROBO A 1.5
+			ROBO B 4 NOP A_Chase("*", "*", CHF_BACKOFF)
+			ROBO C 5 NOP A_Chase("*", "*", CHF_BACKOFF)
+			ROBO C 1.5
+			ROBO D 4 NOP A_Chase("*", "*", CHF_BACKOFF)
+			loop
+		Missile:
+			ROBO E 15 A_FaceTarget
+			ROBO F 5 bright A_FaceTarget
+			ROBO H 0 bright A_WolfAttack
+			ROBO H 5 bright A_CustomMissile("HighChemicalRocket", 32, 0, 4)
+			ROBO G 5 bright A_WolfAttack
+			ROBO H 0 bright A_WolfAttack
+			ROBO H 5 bright A_CustomMissile("HighChemicalRocket", 32, 0, -4)
+			ROBO H 0 bright A_WolfAttack
+			goto See
+		Death:
+			ROBO A .5 A_Fall
+			ROBO A 52.5 A_Scream
+			ROBO IJKLMN 5
+			ROBO O -1
+			stop
+	}
+}

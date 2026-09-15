@@ -1,0 +1,19 @@
+//weapon/hmg/pickup		{ NULL ALHVMGUP PCCGUNUP }
+//weapon/hmg/attack 		{ DSHMGUN }
+
+missile/fire			{ DSRLAUNC }
+missile/hit				{ DSBAREXP }
+
+weapon/knife/swing		{ DSKNFSWG }
+weapon/knife/attack		{ DSKNFHIT }
+
+player/pain				{ DSPLPAIN }
+
+knight/missile			{ DSKNTATK ALKNTATK PCKNTATK }
+
+fake/attack				{ DSFLAMER ALFAKFIR PCFAKFIR }
+weapon/flamer/attack	{ DSFLAMER ALFAKFIR PCFAKFIR }
+weapon/flamer/impact	{ DSFIRXPL }
+
+weapon/flamer/pickup	{ NULL ALFLAMUP PCMGUNUP }
+weapon/rocket/pickup	{ NULL ALLAUNUP PCCGUNUP }

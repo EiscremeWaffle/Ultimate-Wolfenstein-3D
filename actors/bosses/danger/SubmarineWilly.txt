@@ -1,0 +1,32 @@
+actor SubmarineWilly : Trans 99
+{
+	seesound "subwilly/sight"
+	deathsound "subwilly/death"
+	attacksound "subwilly/attack"
+	dropitem "YellowKey"
+	states
+	{
+		Spawn:
+			SUBW A -1 NOP A_Look(0, 0, 0, 0, 360)
+			stop
+		See:
+			SUBW A 5 NOP A_Chase
+			SUBW A 1.5
+			SUBW B 4 NOP A_Chase
+			SUBW C 5 NOP A_Chase
+			SUBW C 1.5
+			SUBW D 4 NOP A_Chase
+			loop
+		Missile:
+			SUBW E 15 A_FaceTarget
+			SUBW F 5 bright A_FaceTarget
+			SUBW GFGFGE 5 bright A_WolfAttack
+			goto See
+		Death:
+			SUBW A .5 A_Fall
+			SUBW A 52.5 A_Scream
+			SUBW HIJ 7.5
+			SUBW K -1
+			stop
+	}
+}

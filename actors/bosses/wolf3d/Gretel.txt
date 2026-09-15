@@ -1,0 +1,36 @@
+actor Gretel : WolfensteinMonster 20
+{
+	points 5000
+	health 850, 950, 1050, 1200
+	speed 1, 3
+	attacksound "gretel/attack"
+	deathsound "gretel/death"
+	seesound "gretel/sight"
+	dropitem "GoldKey"
+	+AMBUSH
+	states
+	{
+		Spawn:
+			GRET A -1 NOP A_Look(0, 0, 0, 0, 360)
+			stop
+		See:
+			GRET A 5 NOP A_Chase
+			GRET A 1.5
+			GRET B 4 NOP A_Chase
+			GRET C 5 NOP A_Chase
+			GRET C 1.5
+			GRET D 4 NOP A_Chase
+			loop
+		Missile:
+			GRET E 15 A_FaceTarget
+			GRET F 5 bright A_FaceTarget
+			GRET GFGFGE 5 bright A_WolfAttack
+			goto See
+		Death:
+			GRET H 7.5 A_Fall
+			GRET I 7.5 A_Scream
+			GRET J 7.5
+			GRET K -1
+			stop
+	}
+}
